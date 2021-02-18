@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+// import logo from '/../public/brand-logo.svg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
