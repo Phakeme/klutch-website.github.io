@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .h-670 {
+    height: 670px;
+  },
+  .h-350 {
+    height: 350px;
+  }
+}
+
 html,
 body {
   padding: 0;

@@ -1,14 +1,17 @@
+import HeroSection from '../Components/HeroSection'
+import WhyChooseUs from '../Components/WhyChooseUs'
 import  {Navbar} from '../Components/Navbar'
-// import logo from '../public/brand-logo.svg'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-  <>
-<Navbar/>
-{/* <img src={logo}/> */}
-  <Component {...pageProps} />
-  </>)
+    <>
+      <Navbar/>
+      <Component {...pageProps} />
+      <br/>
+      <WhyChooseUs text="Footer Section"/>
+    </>
+  )
 }
 
 export default MyApp

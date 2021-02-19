@@ -9,7 +9,8 @@ module.exports = {
       black: '#000',
       white: '#fff',
       lightGray: '#F8F8F8',
-      test: '#2596be'
+      test: '#2596be',
+      pink: '#D26F8F'
     }
   },
   variants: {
