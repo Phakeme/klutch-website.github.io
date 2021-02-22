@@ -1,7 +1,9 @@
-import HeroSection from "../Components/HeroSection";
+import HeroSection from "../components/hero";
 
 export default function FirstPost() {
-    return (<>
-    <HeroSection text='Treatments'/>
-</>)
-  }
+  return (
+    <>
+      <HeroSection text="Treatments" />
+    </>
+  );
+}

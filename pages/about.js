@@ -1,7 +1,7 @@
-
-
 export default function FirstPost() {
-    return (<>
-    <p>About Page</p>
-</>)
-  }
+  return (
+    <>
+      <p>About Page</p>
+    </>
+  );
+}

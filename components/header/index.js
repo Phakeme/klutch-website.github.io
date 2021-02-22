@@ -1,16 +1,31 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import {Container} from '../global/container/index'
-import { Inner } from './styles/header'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Container } from "../global/container/index";
+import { Nav, SocialLinks, Inner, Logo } from "./styles/header";
 
 export default function Header({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>
+  return <Container {...restProps}>{children}</Container>;
 }
 
 Header.Inner = function HeaderInner({ children, ...restProps }) {
-  return <Inner {...restProps}>{children}</Inner>
-}
+  return <Inner {...restProps}>{children}</Inner>;
+};
+
+Header.SocialLinks = function HeaderSocialLinks({ children, ...restProps }) {
+  return <SocialLinks {...restProps}>{children}</SocialLinks>;
+};
+
+Header.Nav = function HeaderNav({ children, ...restProps }) {
+  return <Nav {...restProps}>{children}</Nav>;
+};
+
+Header.Logo = function HeaderLogo({ children, ...restProps }) {
+  return <Logo {...restProps}>{children}</Logo>;
+};
+// Header.Inner = function HeaderInner({ children, ...restProps }) {
+//   return <Inner {...restProps}>{children}</Inner>
+// }
 
 // export const Navbar = () => {
 //     return (
@@ -19,15 +34,15 @@ Header.Inner = function HeaderInner({ children, ...restProps }) {
 //             <div><p>Contact info here</p></div>
 //             <div><p>Social links</p></div>
 //         </div>
-//         <div className="container px-6 mx-6 max-w-6xl max-w-screen-xl mx-auto ">  
+//         <div className="container px-6 mx-6 max-w-6xl max-w-screen-xl mx-auto ">
 //         <NavContacts />
 //         <div className="flex justify-between p-6 items-center flex-no-shrink bg-black w-full">
 //           <Link href="/"><Image src="/../public/brand-logo.svg" alt="me" width="auto" height="50%" /></Link>
-        
+
 //           <div className="block lg:hidden">
 //           </div>
 //             <div className="flex text-white">
-              
+
 //               <NavLink name="Home" href="/"/>
 //               <NavLink name="About" href="/about"/>
 //               <NavLink name="Treatments" href="/treatments"/>
@@ -47,10 +62,10 @@ Header.Inner = function HeaderInner({ children, ...restProps }) {
 //                     Contacts
 //                   </Link>
 //                 </div> */}
-              
+
 //           </div>
 //         </div>
-//         </div> 
+//         </div>
 //       </nav>
 //     )
 // }
