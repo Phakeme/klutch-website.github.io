@@ -27,6 +27,17 @@ export const Logo = styled.img`
   width: 100%;
 `;
 
-{
-  /* <img src="/brand-logo.svg" alt="Vercel Logo"  /> */
-}
+export const NavItems = styled.div`
+  display: flex;
+`;
+
+export const LinkItem = styled.div`
+  padding: 15px;
+  margin-left: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 48px;
+  :hover {
+    background-color: #d26f8f;
+  }
+`;

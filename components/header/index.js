@@ -1,8 +1,14 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+
 import { Container } from "../global/container/index";
-import { Nav, SocialLinks, Inner, Logo } from "./styles/header";
+import {
+  Nav,
+  SocialLinks,
+  Inner,
+  Logo,
+  LinkItem,
+  NavItems,
+} from "./styles/header";
 
 export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -22,6 +28,14 @@ Header.Nav = function HeaderNav({ children, ...restProps }) {
 
 Header.Logo = function HeaderLogo({ children, ...restProps }) {
   return <Logo {...restProps}>{children}</Logo>;
+};
+
+Header.NavItems = function HeaderNavItems({ children, ...restProps }) {
+  return <NavItems {...restProps}>{children}</NavItems>;
+};
+
+Header.LinkItem = function HeaderLinkItem({ children }) {
+  return <LinkItem>{children}</LinkItem>;
 };
 // Header.Inner = function HeaderInner({ children, ...restProps }) {
 //   return <Inner {...restProps}>{children}</Inner>

@@ -17,7 +17,29 @@ export function HeaderContainer({ children }) {
               <Header.Logo src="/brand-logo.svg" alt="Vercel Logo" />
             </a>
           </Link>
-          <span>Nav Links</span>
+          <Header.NavItems>
+            <Header.LinkItem>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </Header.LinkItem>
+            <Header.LinkItem>
+              <Link href="/treatments">
+                <a>Treatments</a>
+              </Link>
+            </Header.LinkItem>
+            <Header.LinkItem>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </Header.LinkItem>
+
+            <Header.LinkItem>
+              <Link href="/contacts">
+                <a>Contact</a>
+              </Link>
+            </Header.LinkItem>
+          </Header.NavItems>
         </Header.Nav>
       </Header.Inner>
     </Header>

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 // import { Container } from '../components/global/container'
 import { HeaderContainer } from "../containers/header";
+import { HeroContainer } from "../containers/hero";
 
 import styles from "../styles/Home.module.css";
 // import logo from '/../public/brand-logo.svg'
@@ -15,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeaderContainer />
+      <HeroContainer />
     </div>
   );
 }

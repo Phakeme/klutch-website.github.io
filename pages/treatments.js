@@ -1,9 +1,10 @@
-import HeroSection from "../components/hero";
+import { HeaderContainer } from "../containers/header";
 
 export default function FirstPost() {
   return (
     <>
-      <HeroSection text="Treatments" />
+      <HeaderContainer />
+      <div>Treatments Page</div>
     </>
   );
 }

@@ -1,7 +1,12 @@
+import { HeaderContainer } from "../containers/header";
+
 export default function FirstPost() {
   return (
     <>
-      <p>About Page</p>
+      <>
+        <HeaderContainer />
+        <div>About Page</div>
+      </>
     </>
   );
 }

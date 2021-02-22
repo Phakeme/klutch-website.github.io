@@ -1,7 +1,10 @@
+import { HeaderContainer } from "../containers/header";
+
 export default function FirstPost() {
   return (
     <>
-      <p>Contacts Page</p>
+      <HeaderContainer />
+      <div>Contacts Page</div>
     </>
   );
 }
