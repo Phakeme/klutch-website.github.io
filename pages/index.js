@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Link from "next/link";
-// import { Container } from '../components/global/container'
 import { HeaderContainer } from "../containers/header";
 import { HeroContainer } from "../containers/hero";
-
-import styles from "../styles/Home.module.css";
-// import logo from '/../public/brand-logo.svg'
-// import Image from 'next/image'
+import { AboutContainer } from "../containers/about";
+import { WhyChooseUsContainer } from "../containers/whyChooseUs";
+import { FormContainer } from "../containers/form";
+import { FooterContainer } from "../containers/footer";
 
 export default function Home() {
   return (
@@ -17,6 +15,10 @@ export default function Home() {
       </Head>
       <HeaderContainer />
       <HeroContainer />
+      <AboutContainer />
+      <FormContainer />
+      <WhyChooseUsContainer />
+      <FooterContainer />
     </div>
   );
 }
