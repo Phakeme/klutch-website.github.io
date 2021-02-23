@@ -24,8 +24,8 @@ export function HeaderContainer({ children }) {
               </Link>
             </Header.LinkItem>
             <Header.LinkItem>
-              <Link href="/treatments">
-                <a>Treatments</a>
+              <Link href="/procedures">
+                <a>Procedures</a>
               </Link>
             </Header.LinkItem>
             <Header.LinkItem>

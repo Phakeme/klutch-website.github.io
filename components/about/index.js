@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../global/container/";
-import { Wrapper } from "./styles/about";
+import { Wrapper, Item } from "./styles/about";
 
 export default function About({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -8,4 +8,8 @@ export default function About({ children, ...restProps }) {
 
 About.Wrapper = function AboutWrapper({ children, ...restProps }) {
   return <Wrapper {...restProps}>{children}</Wrapper>;
+};
+
+About.Item = function AboutItem({ children, ...restProps }) {
+  return <Item {...restProps}>{children}</Item>;
 };
