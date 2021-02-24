@@ -12,7 +12,9 @@ export function WhyChooseUsContainer({ children }) {
     <WhyChooseUs>
       <WhyChooseUs.Wrapper>
         <WhyChooseUs.Content>
-          <WhyChooseUs.Title>Why Choose Us</WhyChooseUs.Title>
+          <WhyChooseUs.Title>
+            Why choose Dr Kajal Lutchminarian
+          </WhyChooseUs.Title>
           <WhyChooseUs.Grid>
             <WhyChooseUs.GridItem>
               <WhyChooseUs.GridItemInner>

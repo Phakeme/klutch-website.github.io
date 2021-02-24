@@ -7,10 +7,10 @@ export function HeroContainer({ children }) {
       <Hero.Wrapper>
         <Hero.TextWrapper>
           <Hero.H1>Natural Beauty Enhanced</Hero.H1>
-          <p>
-            treatments, surgical, and non-surgical, <br />
-            including cosmetic and reconstructive and non-surgical.
-          </p>
+          <Hero.SubHeading>
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit...
+          </Hero.SubHeading>
         </Hero.TextWrapper>
       </Hero.Wrapper>
       <Hero.Showcase>
@@ -22,7 +22,7 @@ export function HeroContainer({ children }) {
           </p>
           <h3>Link Here</h3>
         </Hero.Card>
-        <Hero.Card style={{ backgroundColor: "#f584a9" }}>
+        <Hero.Card style={{ backgroundColor: "#9c526a" }}>
           <h3>Hero Showcase</h3>
           <p>
             Click below to view all our available treatments, surgical, and

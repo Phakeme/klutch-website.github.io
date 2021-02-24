@@ -1,6 +1,14 @@
 import React from "react";
 import { Container } from "../global/container/";
-import { Wrapper, Showcase, Links, TextWrapper, H1, Card } from "./styles/hero";
+import {
+  Wrapper,
+  Showcase,
+  Links,
+  TextWrapper,
+  H1,
+  Card,
+  SubHeading,
+} from "./styles/hero";
 
 export default function Hero({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -24,6 +32,10 @@ Hero.TextWrapper = function HeroTextWrapper({ children, ...restProps }) {
 
 Hero.H1 = function HeroH1({ children, ...restProps }) {
   return <H1 {...restProps}>{children}</H1>;
+};
+
+Hero.SubHeading = function HeroSubHeading({ children, ...restProps }) {
+  return <SubHeading {...restProps}>{children}</SubHeading>;
 };
 
 Hero.Links = function HeroLinks({ children, ...restProps }) {
