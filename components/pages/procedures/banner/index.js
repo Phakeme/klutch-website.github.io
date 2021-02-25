@@ -1,18 +1,22 @@
 import React from "react";
 
 import { Container } from "../../../global/container/";
-import { Title, Inner } from "./styles/banner";
+import { Title, Inner, Wrapper } from "./styles/banner";
 
 export default function Banner({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
 
-Banner.Inner = function BannerInner({ children, ...restProps }) {
-  return <Inner {...restProps}>{children}</Inner>;
+Banner.Wrapper = function BannerWrapper({ children, ...restProps }) {
+  return <Wrapper {...restProps}>{children}</Wrapper>;
 };
 
 Banner.Title = function BannerTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
+};
+
+Banner.Inner = function BannerInner({ children, ...restProps }) {
+  return <Inner {...restProps}>{children}</Inner>;
 };
 
 // Banner.Nav = function BannerNav({ children, ...restProps }) {

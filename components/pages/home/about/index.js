@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../global/container/";
+import { Container } from "../../../global/container/";
 import { Wrapper, Item } from "./styles/about";
 
 export default function About({ children, ...restProps }) {
