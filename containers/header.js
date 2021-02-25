@@ -30,7 +30,7 @@ export function HeaderContainer({ children }) {
             </Header.LinkItem>
             <Header.LinkItem>
               <Link href="/about">
-                <a>About</a>
+                <a>Meet Dr Lutch</a>
               </Link>
             </Header.LinkItem>
 
