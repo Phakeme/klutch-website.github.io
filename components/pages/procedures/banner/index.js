@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState, createContext, useContext } from "react";
+
+const ToggleContext = createContext();
 
 import { Container } from "../../../global/container/";
-import { Title, Inner, Wrapper } from "./styles/banner";
+import { Title, Button, ButtonFrame, Wrapper } from "./styles/banner";
 
 export default function Banner({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -15,8 +17,26 @@ Banner.Title = function BannerTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Banner.Inner = function BannerInner({ children, ...restProps }) {
-  return <Inner {...restProps}>{children}</Inner>;
+Banner.ButtonFrame = function BannerButtonFrame({ children, ...restProps }) {
+  const [toggleShow, setToggleShow] = useState(false);
+
+  return (
+    <ToggleContext.Provider value={{ toggleShow, setToggleShow }}>
+      <ButtonFrame {...restProps}>{children}</ButtonFrame>
+    </ToggleContext.Provider>
+  );
+};
+
+Banner.Button = function BannerButton({ children, ...restProps }) {
+  const { toggleShow, setToggleShow } = useContext(ToggleContext);
+  return (
+    <Button
+      onClick={() => setToggleShow((toggleShow) => !toggleShow)}
+      {...restProps}
+    >
+      {children}
+    </Button>
+  );
 };
 
 // Banner.Nav = function BannerNav({ children, ...restProps }) {

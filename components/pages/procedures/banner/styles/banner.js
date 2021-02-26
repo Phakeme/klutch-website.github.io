@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  display: flex;
   padding: 30px;
   background-color: var(--color-white);
-`;
-
-export const Inner = styled.div`
-  display: flex;
+  /* background-color: green; */
   color: var(--color-black);
 `;
 
@@ -15,6 +13,22 @@ export const Title = styled.h1`
   margin: 0;
 `;
 
-export const Content = styled.div`
-  background-color: red;
+export const ButtonFrame = styled.div`
+  display: flex;
+  /* background-color: red; */
+  /* margin-left: 20px; */
 `;
+
+export const Button = styled.div`
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  margin-left: 20px;
+  padding: 10px 15px;
+  min-width: 100px;
+  cursor: pointer;
+  text-align: center;
+`;
+
+// export const Content = styled.div`
+//   background-color: red;
+// `;
