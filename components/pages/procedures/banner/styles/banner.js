@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   display: flex;
   padding: 30px;
   /* background-color: var(--color-white); */
-  /* background-color: green; */
   color: var(--color-black);
 `;
 
