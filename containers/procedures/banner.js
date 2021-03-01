@@ -1,4 +1,5 @@
 import React from "react";
+import reconstructiveData from "../../data/reconstructive.json";
 import { Banner } from "../../components/";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -16,7 +17,16 @@ export function BannerContainer({ children }) {
       </Banner.Wrapper>
 
       <Banner.BodyReconstructive>
-        <p>BodyReconstructive</p>
+        {reconstructiveData.map((item) => (
+          <div id={item.id}>
+            <p>{item.title}</p>
+            <ul>
+              {item.types.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </Banner.BodyReconstructive>
       <Banner.BodyCosmetics>
         <p>BodyCosmetics</p>
