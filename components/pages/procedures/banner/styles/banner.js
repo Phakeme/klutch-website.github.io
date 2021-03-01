@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   padding: 30px;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   /* background-color: green; */
   color: var(--color-black);
 `;
@@ -29,6 +29,15 @@ export const Button = styled.div`
   text-align: center;
 `;
 
-// export const Content = styled.div`
-//   background-color: red;
-// `;
+export const BodyCosmetics = styled.div`
+  background-color: white;
+  color: black;
+  padding: 30px;
+  min-height: 400px;
+`;
+export const BodyReconstructive = styled.div`
+  background-color: white;
+  color: black;
+  padding: 30px;
+  min-height: 400px;
+`;

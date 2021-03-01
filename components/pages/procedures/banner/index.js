@@ -3,10 +3,22 @@ import React, { useState, createContext, useContext } from "react";
 const ToggleContext = createContext();
 
 import { Container } from "../../../global/container/";
-import { Title, Button, ButtonFrame, Wrapper } from "./styles/banner";
+import {
+  Title,
+  Button,
+  ButtonFrame,
+  Wrapper,
+  BodyReconstructive,
+  BodyCosmetics,
+} from "./styles/banner";
 
 export default function Banner({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
+  const [toggleShow, setToggleShow] = useState("cosmetics");
+  return (
+    <ToggleContext.Provider value={{ toggleShow, setToggleShow }}>
+      <Container {...restProps}>{children}</Container>;
+    </ToggleContext.Provider>
+  );
 }
 
 Banner.Wrapper = function BannerWrapper({ children, ...restProps }) {
@@ -18,20 +30,14 @@ Banner.Title = function BannerTitle({ children, ...restProps }) {
 };
 
 Banner.ButtonFrame = function BannerButtonFrame({ children, ...restProps }) {
-  const [toggleShow, setToggleShow] = useState(false);
-
-  return (
-    <ToggleContext.Provider value={{ toggleShow, setToggleShow }}>
-      <ButtonFrame {...restProps}>{children}</ButtonFrame>
-    </ToggleContext.Provider>
-  );
+  return <ButtonFrame {...restProps}>{children}</ButtonFrame>;
 };
 
 Banner.Button = function BannerButton({ children, ...restProps }) {
   const { toggleShow, setToggleShow } = useContext(ToggleContext);
   return (
     <Button
-      onClick={() => setToggleShow((toggleShow) => !toggleShow)}
+      onClick={() => setToggleShow((toggleShow) => (toggleShow = "cosmetics"))}
       {...restProps}
     >
       {children}
@@ -39,18 +45,38 @@ Banner.Button = function BannerButton({ children, ...restProps }) {
   );
 };
 
-// Banner.Nav = function BannerNav({ children, ...restProps }) {
-//   return <Nav {...restProps}>{children}</Nav>;
-// };
+Banner.Button2 = function BannerButton2({ children, ...restProps }) {
+  const { toggleShow, setToggleShow } = useContext(ToggleContext);
+  return (
+    <Button
+      onClick={() =>
+        setToggleShow((toggleShow) => (toggleShow = "reconstructive"))
+      }
+      {...restProps}
+    >
+      {children}
+    </Button>
+  );
+};
 
-// Banner.Logo = function BannerLogo({ children, ...restProps }) {
-//   return <Logo {...restProps}>{children}</Logo>;
-// };
+Banner.BodyCosmetics = function BannerBodyCosmetics({
+  children,
+  ...restProps
+}) {
+  const { toggleShow, setToggleShow } = useContext(ToggleContext);
 
-// Banner.NavItems = function BannerNavItems({ children, ...restProps }) {
-//   return <NavItems {...restProps}>{children}</NavItems>;
-// };
+  return toggleShow === "cosmetics" ? (
+    <BodyCosmetics {...restProps}>{children}</BodyCosmetics>
+  ) : null;
+};
 
-// Banner.LinkItem = function BannerLinkItem({ children }) {
-//   return <LinkItem>{children}</LinkItem>;
-// };
+Banner.BodyReconstructive = function BannerBodyReconstructive({
+  children,
+  ...restProps
+}) {
+  const { toggleShow, setToggleShow } = useContext(ToggleContext);
+
+  return toggleShow === "reconstructive" ? (
+    <BodyReconstructive {...restProps}>{children}</BodyReconstructive>
+  ) : null;
+};
