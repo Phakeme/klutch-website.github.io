@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  padding: 30px;
+  align-items: center;
+  padding: 15px 30px;
   /* background-color: var(--color-white); */
   color: var(--color-black);
 `;
 
-export const Title = styled.h1`
-  font-size: 30px;
+export const Title = styled.h3`
+  /* font-size: 30px; */
   margin: 0;
 `;
 

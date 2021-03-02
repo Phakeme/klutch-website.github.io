@@ -1,0 +1,22 @@
+[
+  {
+    "id": 2,
+    "title": "Cosmetic",
+    "types": [
+      {
+        "id": 3,
+        "title": "non-surgical procedures",
+        "surgicalTypes": [
+          "Botulinum Toxin",
+          "Fillers",
+          "Chemical Peels",
+          "Vampire Facials",
+          "24K Gold Collagen Induction",
+          "Threadlift",
+          "Fat dessolving injections",
+          "vein treatments"
+        ]
+      }
+    ]
+  }
+]
