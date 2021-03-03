@@ -27,14 +27,31 @@ export const Logo = styled.img`
   width: 100%;
 `;
 
-export const NavItems = styled.div`
+export const NavItems = styled.ul`
+  /* background-color: blue; */
+  width: fit-content;
   display: flex;
+  justify-content: center;
+  align-content: center;
 `;
 
-export const LinkItem = styled.div`
+export const LinkItem = styled.li`
+  padding: 15px;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  /* height: 48px; */
+  :hover {
+    background-color: #d26f8f;
+  }
+`;
+
+export const LinkItemActive = styled.div`
   padding: 15px;
   margin-left: 15px;
   font-size: 14px;
+  background-color: #d26f8f;
   text-transform: uppercase;
   height: 48px;
   :hover {

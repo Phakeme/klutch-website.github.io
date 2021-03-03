@@ -1,8 +1,10 @@
 import React from "react";
 import { Header } from "../components";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export function HeaderContainer({ children }) {
+  const router = useRouter();
   return (
     <Header>
       <Header.Inner>
@@ -18,27 +20,37 @@ export function HeaderContainer({ children }) {
             </a>
           </Link>
           <Header.NavItems>
-            <Header.LinkItem>
+            <li className={router.pathname == "/" ? "active" : "not-active"}>
               <Link href="/">
                 <a>Home</a>
               </Link>
-            </Header.LinkItem>
-            <Header.LinkItem>
+            </li>
+            <li
+              className={
+                router.pathname == "/procedures" ? "active" : "not-active"
+              }
+            >
               <Link href="/procedures">
                 <a>Procedures</a>
               </Link>
-            </Header.LinkItem>
-            <Header.LinkItem>
+            </li>
+            <li
+              className={router.pathname == "/about" ? "active" : "not-active"}
+            >
               <Link href="/about">
                 <a>Meet Dr Lutch</a>
               </Link>
-            </Header.LinkItem>
+            </li>
 
-            <Header.LinkItem>
+            <li
+              className={
+                router.pathname == "/contacts" ? "active" : "not-active"
+              }
+            >
               <Link href="/contacts">
                 <a>Contact</a>
               </Link>
-            </Header.LinkItem>
+            </li>
           </Header.NavItems>
         </Header.Nav>
       </Header.Inner>
