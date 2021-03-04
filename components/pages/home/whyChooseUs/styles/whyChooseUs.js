@@ -38,6 +38,7 @@ export const Icon = styled.div`
 `;
 export const Info = styled.div`
   margin-left: 10px;
+  font-size: 20px;
 `;
 
 export const Card = styled.div`

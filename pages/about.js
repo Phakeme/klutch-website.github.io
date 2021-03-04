@@ -1,3 +1,4 @@
+import { FooterContainer } from "../containers/footer/footer";
 import { HeaderContainer } from "../containers/header";
 
 export default function FirstPost() {
@@ -5,7 +6,7 @@ export default function FirstPost() {
     <>
       <>
         <HeaderContainer />
-        <div>About Page</div>
+        <FooterContainer />
       </>
     </>
   );
