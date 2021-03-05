@@ -20,7 +20,27 @@ export const SocialLinks = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
+`;
+
+export const SocialDetails = styled.div`
+  color: var(--color-black);
+  font-size: 16px;
+  display: flex;
+
+  > div {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    align-items: center;
+    > span {
+      margin-left: 10px;
+    }
+  }
+  /*justify-content: space-between;
+  align-items: center; */
+  /* height: 50px; */
 `;
 
 export const Logo = styled.img`

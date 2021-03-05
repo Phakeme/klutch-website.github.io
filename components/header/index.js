@@ -9,6 +9,7 @@ import {
   Logo,
   LinkItem,
   NavItems,
+  SocialDetails,
 } from "./styles/header";
 
 export default function Header({ children, ...restProps }) {
@@ -21,6 +22,13 @@ Header.Inner = function HeaderInner({ children, ...restProps }) {
 
 Header.SocialLinks = function HeaderSocialLinks({ children, ...restProps }) {
   return <SocialLinks {...restProps}>{children}</SocialLinks>;
+};
+
+Header.SocialDetails = function HeaderSocialDetails({
+  children,
+  ...restProps
+}) {
+  return <SocialDetails {...restProps}>{children}</SocialDetails>;
 };
 
 Header.Nav = function HeaderNav({ children, ...restProps }) {
