@@ -13,38 +13,34 @@ export function HeaderContainer({ children }) {
         <Header.SocialLinks>
           <Header.SocialDetails>
             <div>
-              <FaRegMap size="1.8rem" />
-              <span>Netcare Krugersdorp Hospital</span>
+              <FaRegMap size="1.2rem" />
+              <span>Ribumed Hospital Glenwood, Berea |</span>
+              <span>Life Mount Edgecombe Hospital, Life Mount Edgecombe </span>
             </div>
             <div>
-              <FaPhoneAlt size="1.5rem" />
-              <span>(031) 301 0418</span>
+              <FaPhoneAlt size="1rem" />
+              <span>(031) 100 0012</span>
             </div>
             <div>
-              <FaEnvelope size="1.5rem" />
-              <span>sanveer@artprint.co.za </span>
+              <FaEnvelope size="1rem" />
+              <span>info@klutchplasticsugery.com</span>
             </div>
           </Header.SocialDetails>
           <div>
             <SocialIcon
-              url="https://www.youtube.com/"
+              url="/contacts"
               target="blank"
-              style={{ height: 30, width: 30 }}
-            />
-            <SocialIcon
-              url="https://www.instagram.com/"
-              target="blank"
-              style={{ height: 30, width: 30, marginLeft: 20 }}
+              style={{ height: 25, width: 25 }}
             />
             <SocialIcon
               url="https://www.facebook.com/"
               target="blank"
-              style={{ height: 30, width: 30, marginLeft: 20 }}
+              style={{ height: 25, width: 25, marginLeft: 20 }}
             />
             <SocialIcon
               url="http://twitter.com/"
               target="blank"
-              style={{ height: 30, width: 30, marginLeft: 20 }}
+              style={{ height: 25, width: 25, marginLeft: 20 }}
             />
           </div>
         </Header.SocialLinks>

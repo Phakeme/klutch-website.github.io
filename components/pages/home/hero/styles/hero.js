@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 export const TextWrapper = styled.div`
   padding-top: 10px;
   height: 100%;
-  width: 50%;
+  width: 70%;
   /* background-color: red; */
 `;
 
@@ -48,5 +48,6 @@ export const Links = styled.div`
 export const SubHeading = styled.h3`
   /* background-color: blueviolet; */
   font-size: 28px;
-  margin-top: 0;
+  line-height: 40px;
+  /* margin-top: 0; */
 `;

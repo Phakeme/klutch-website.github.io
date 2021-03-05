@@ -6,10 +6,10 @@ export function HeroContainer({ children }) {
     <Hero>
       <Hero.Wrapper>
         <Hero.TextWrapper>
-          <Hero.H1>Natural Beauty Enhanced</Hero.H1>
+          <Hero.H1>Top Female Plastic Surgeon in Durban </Hero.H1>
           <Hero.SubHeading>
-            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit...
+            Plastic, Reconstruction and Aesthetic Surgery. <br />
+            Committment to excellence and attention to details.
           </Hero.SubHeading>
         </Hero.TextWrapper>
       </Hero.Wrapper>

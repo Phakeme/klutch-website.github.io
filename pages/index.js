@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { HeaderContainer } from "../containers/header";
 import { HeroContainer } from "../containers/hero";
-import { AboutContainer } from "../containers/about";
+// import { AboutContainer } from "../containers/about";
 import { WhyChooseUsContainer } from "../containers/whyChooseUs";
 // import { FormContainer } from "../containers/form";
 import { FooterContainer } from "../containers/footer/footer";
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <HeaderContainer />
       <HeroContainer />
-      <AboutContainer />
+      {/* <AboutContainer /> */}
       {/* <FormContainer /> */}
       <WhyChooseUsContainer />
       <FooterContainer />

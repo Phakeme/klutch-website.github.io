@@ -25,7 +25,7 @@ export const SocialLinks = styled.div`
 
 export const SocialDetails = styled.div`
   color: var(--color-black);
-  font-size: 16px;
+  font-size: 13px;
   display: flex;
 
   > div {
