@@ -4,7 +4,7 @@ import { HeroContainer } from "../containers/pages/home/hero";
 import { AboutSummaryContainer } from "../containers/pages/home/aboutSummary";
 import { WhyChooseUsContainer } from "../containers/whyChooseUs";
 // import { FormContainer } from "../containers/form";
-import { FooterContainer } from "../containers/footer/footer";
+import { FooterContainer } from "../containers/global/footer";
 
 export default function Home() {
   return (
