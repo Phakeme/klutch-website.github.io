@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const Inner = styled.header`
-  /* background-color: blueviolet; */
-`;
+export const Inner = styled.header``;
 
 export const Nav = styled.nav`
   display: flex;
@@ -12,11 +10,9 @@ export const Nav = styled.nav`
   height: 129px;
   color: white;
   padding: 0 30px;
-  /* width: 100%; */
 `;
 
 export const SocialLinks = styled.div`
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,23 +28,19 @@ export const SocialDetails = styled.div`
     margin-right: 20px;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
+
     align-items: center;
     > span {
       margin-left: 10px;
     }
   }
-  /*justify-content: space-between;
-  align-items: center; */
-  /* height: 50px; */
 `;
 
 export const Logo = styled.img`
-  width: 100%;
+  width: 350px;
 `;
 
 export const NavItems = styled.ul`
-  /* background-color: blue; */
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -61,7 +53,6 @@ export const LinkItem = styled.li`
   margin-left: 15px;
   font-size: 14px;
   text-transform: uppercase;
-  /* height: 48px; */
   :hover {
     background-color: #d26f8f;
   }

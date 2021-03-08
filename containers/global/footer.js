@@ -19,7 +19,6 @@ export function FooterContainer({ children }) {
             </a>
           </Footer.Card>
           <Footer.Card>
-            {" "}
             <Footer.Card>
               <div>
                 <FaPhoneAlt size="2rem" color="#d26f8f" />

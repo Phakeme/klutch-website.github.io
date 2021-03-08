@@ -7,24 +7,30 @@ export const Wrapper = styled.footer`
   /* background-color: var(--color-pink); */
   margin-top: 70px;
   padding: 30px;
+  width: 100%;
 `;
 
 export const Inner = styled.footer`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
-  padding: 20px 30px 0 30px;
-  /* background-color: var(--color-pink); */
+  width: auto;
   /* background-color: red; */
-  /* margin-top: 70px; */
-  /* min-height: 200px; */
 `;
 
-export const Card = styled.footer`
+export const Card = styled.div`
   font-size: 20px;
   display: flex;
+  height: 100%;
 
   :not(:last-child) {
     border-right: 1px solid black;
   }
 `;
+
+// export const Card = styled.div`
+//   padding: 30px;
+//   height: 100%;
+//   /* min-height: 245px; */
+//   background-color: #d26f8f;
+// `;

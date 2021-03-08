@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?cs=srgb&dl=pexels-cottonbro-3997989.jpg&fm=jpg");
   background-size: cover;
-  /* background-position: 0px -10px; */
   background-repeat: no-repeat;
 `;
 
@@ -14,7 +13,6 @@ export const TextWrapper = styled.div`
   padding-top: 10px;
   height: 100%;
   width: 70%;
-  /* background-color: red; */
 `;
 
 export const H1 = styled.h1`

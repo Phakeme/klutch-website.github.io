@@ -6,7 +6,7 @@ export default function FirstPost() {
   return (
     <>
       <HeaderContainer />
-      <FormContainer />
+      <ContactUsContainer />
       <FooterContainer />
     </>
   );
