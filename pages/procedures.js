@@ -1,5 +1,5 @@
-import { FooterContainer } from "../containers/footer/footer";
-import { HeaderContainer } from "../containers/header";
+import { FooterContainer } from "../containers/global/footer";
+import { HeaderContainer } from "../containers/pages/home/header";
 import { BannerContainer } from "../containers/procedures/banner";
 
 export default function FirstPost() {

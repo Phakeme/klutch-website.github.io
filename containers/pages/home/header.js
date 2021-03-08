@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Header } from "../../../components/";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { SocialIcon } from "react-social-icons";
