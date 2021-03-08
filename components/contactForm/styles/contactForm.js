@@ -1,18 +1,52 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.footer`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  /* grid-gap: 30px; */
+export const Div = styled.div`
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
+  grid-template-columns: 2fr 1fr;
+  padding: 60px;
+  width: 100%;
   min-height: 300px;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #000;
-  /* background-color: var(--color-pink); */
+  background-color: var(--color-white);
   margin-top: 70px;
+
+  span {
+    color: var(--color-pink);
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
+  grid-template-columns: 2fr 1fr;
+  /* padding: 60px; */
+  /* width: 100%; */
+  /* min-height: 300px; */
+  /* background-color: #fff; */
+  /* color: #000; */
+  /* background-color: var(--color-white); */
+  /* margin-top: 70px; */
+`;
+
+export const Form = styled.form`
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 30px; */
+  /* background-color: red; */
+`;
+
+export const Inner = styled.div`
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 `;
 
 export const Item = styled.div`
-  padding: 60px;
+  /* background-color: red; */
   span {
     color: var(--color-pink);
   }
