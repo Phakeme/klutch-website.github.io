@@ -1,5 +1,6 @@
 import React from "react";
 import { ContactForm } from "../../components";
+import { ContactInfoContainer } from "./contactInfo";
 
 export function FormContainer({ children }) {
   return (
@@ -13,7 +14,7 @@ export function FormContainer({ children }) {
           is available.
         </span>
         <ContactForm.Wrapper>
-          <ContactForm.Form onSubmit="{sendEmail}">
+          <ContactForm.Form>
             <ContactForm.Inner>
               <ContactForm.Item>
                 {" "}
@@ -38,7 +39,6 @@ export function FormContainer({ children }) {
                 />
               </ContactForm.Item>
               <ContactForm.Item>
-                {" "}
                 <input
                   type="text"
                   name="contact_name"
@@ -68,6 +68,7 @@ export function FormContainer({ children }) {
               </button>
             </ContactForm.Item>
           </ContactForm.Form>
+          <ContactInfoContainer />
         </ContactForm.Wrapper>
       </ContactForm.Div>
     </ContactForm>

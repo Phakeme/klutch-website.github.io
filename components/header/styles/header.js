@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  height: 129px;
+  height: 100px;
   color: white;
   padding: 0 30px;
 `;

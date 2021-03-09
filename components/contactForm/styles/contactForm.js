@@ -10,7 +10,6 @@ export const Div = styled.div`
   /* background-color: #fff; */
   color: #000;
   background-color: var(--color-white);
-  margin-top: 70px;
 
   span {
     color: var(--color-pink);
