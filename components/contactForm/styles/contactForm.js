@@ -23,10 +23,10 @@ export const Wrapper = styled.div`
   /* padding: 60px; */
   /* width: 100%; */
   /* min-height: 300px; */
-  /* background-color: #fff; */
+  /* background-color: black; */
   /* color: #000; */
   /* background-color: var(--color-white); */
-  /* margin-top: 70px; */
+  margin-top: 20px;
 `;
 
 export const Form = styled.form`
@@ -54,6 +54,25 @@ export const Item = styled.div`
 export const Image = styled.div`
   height: 100%;
   min-height: 300px;
+`;
+
+export const InputField = styled.div`
+  /* background-color: red; */
+  height: 70px;
+  /* padding: 12px 20px; */
+  margin-top: 10px;
+`;
+
+export const Textarea = styled.div`
+  /* background-color: red; */
+  /* height: 70px; */
+  /* padding: 12px 20px; */
+  margin: 10px 0 30px 0;
+  /* margin-top: 10px; */
+`;
+
+export const Error = styled.div`
+  color: var(--color-pink);
 `;
 
 // export const Card = styled.footer`

@@ -93,7 +93,7 @@ input {
   width: 100%;
   height: 50px;
   padding: 12px 20px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: inline-block;
   box-sizing: border-box;
   font-size: inherit;
@@ -109,7 +109,6 @@ textarea {
   width: 100%;
   height: 200px;
   padding: 12px 20px;
-  margin: 30px 0;
   display: inline-block;
   outline: none;
   font-size: inherit;
@@ -137,4 +136,14 @@ textarea:focus {
 
 input[type="submit"]:hover {
   background-color: rgb(47, 141, 230);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px var(--color-grey) inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px var(--color-grey) inset; /*your box-shadow*/
+  -webkit-text-fill-color: #333;
 }
