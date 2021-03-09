@@ -52,37 +52,39 @@ export function HeaderContainer({ children }) {
             </a>
           </Link>
           <Header.NavItems>
-            <li className={router.pathname == "/" ? "active" : "not-active"}>
-              <Link href="/">
+            <Link href="/">
+              <li className={router.pathname == "/" ? "active" : "not-active"}>
                 <a>Home</a>
-              </Link>
-            </li>
-            <li
-              className={
-                router.pathname == "/procedures" ? "active" : "not-active"
-              }
-            >
-              <Link href="/procedures">
+              </li>
+            </Link>
+            <Link href="/procedures">
+              <li
+                className={
+                  router.pathname == "/procedures" ? "active" : "not-active"
+                }
+              >
                 <a>Procedures</a>
-              </Link>
-            </li>
-            <li
-              className={router.pathname == "/about" ? "active" : "not-active"}
-            >
-              <Link href="/about">
+              </li>
+            </Link>
+            <Link href="/about">
+              <li
+                className={
+                  router.pathname == "/about" ? "active" : "not-active"
+                }
+              >
                 <a>Meet Dr Lutch</a>
-              </Link>
-            </li>
+              </li>
+            </Link>
 
-            <li
-              className={
-                router.pathname == "/contacts" ? "active" : "not-active"
-              }
-            >
-              <Link href="/contacts">
+            <Link href="/contacts">
+              <li
+                className={
+                  router.pathname == "/contacts" ? "active" : "not-active"
+                }
+              >
                 <a>Contact</a>
-              </Link>
-            </li>
+              </li>
+            </Link>
           </Header.NavItems>
         </Header.Nav>
       </Header.Inner>

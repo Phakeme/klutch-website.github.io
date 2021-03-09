@@ -45,6 +45,14 @@ export const NavItems = styled.ul`
   display: flex;
   justify-content: center;
   align-content: center;
+
+  > li {
+    cursor: pointer;
+    :hover {
+      background-color: var(--color-white);
+      color: var(--color-pink);
+    }
+  }
 `;
 
 export const LinkItem = styled.li`
