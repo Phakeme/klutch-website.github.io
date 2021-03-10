@@ -21,7 +21,7 @@ export const TextWrapper = styled.div`
   /* height: 100%; */
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 70%;
   padding-bottom: 10px;
 `;
 
@@ -29,7 +29,7 @@ export const H1 = styled.h1`
   color: white;
   font-size: 50px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 100;
   /* margin-top: 13px; */
   margin-bottom: 18px;
 `;
@@ -57,6 +57,7 @@ export const SubHeading = styled.h3`
   /* background-color: blueviolet; */
   font-size: 28px;
   line-height: 40px;
+  font-weight: 100;
   /* margin-top: 0; */
 `;
 
@@ -74,6 +75,8 @@ export const Button = styled.div`
 
   > h3 {
     padding: 0;
+    font-weight: 100;
+    /* font-weight: 100; */
     margin: 0;
   }
 `;
