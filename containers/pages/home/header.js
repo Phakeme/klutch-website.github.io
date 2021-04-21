@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../../../components/";
+import { Header, NavMobile } from "../../../components/";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { SocialIcon } from "react-social-icons";
@@ -12,15 +12,15 @@ export function HeaderContainer({ children }) {
       <Header.Inner>
         <Header.SocialLinks>
           <Header.SocialDetails>
-            <div>
+            <Header.Address>
               <FaRegMap size="1.2rem" />
               <span>Ribumed Hospital Glenwood, Berea |</span>
               <span>Life Mount Edgecombe Hospital, Life Mount Edgecombe </span>
-            </div>
-            <div>
+            </Header.Address>
+            <Header.Tell>
               <FaPhoneAlt size="1rem" />
               <span>(031) 100 0012</span>
-            </div>
+            </Header.Tell>
             <div>
               <FaEnvelope size="1rem" />
               <span>info@klutchplasticsugery.com</span>
@@ -52,40 +52,53 @@ export function HeaderContainer({ children }) {
             </a>
           </Link>
           <Header.NavItems>
-            <Link href="/">
-              <li className={router.pathname == "/" ? "active" : "not-active"}>
-                <a>Home</a>
-              </li>
-            </Link>
-            <Link href="/procedures">
-              <li
-                className={
-                  router.pathname == "/procedures" ? "active" : "not-active"
-                }
-              >
-                <a>Procedures</a>
-              </li>
-            </Link>
-            <Link href="/about">
-              <li
-                className={
-                  router.pathname == "/about" ? "active" : "not-active"
-                }
-              >
-                <a>Meet Dr Lutch</a>
-              </li>
-            </Link>
+            <Header.LinkItem>
+              <Link href="/">
+                <li
+                  className={router.pathname == "/" ? "active" : "not-active"}
+                >
+                  <a>Home</a>
+                </li>
+              </Link>
+            </Header.LinkItem>
+            <Header.LinkItem>
+              <Link href="/procedures">
+                <li
+                  className={
+                    router.pathname == "/procedures" ? "active" : "not-active"
+                  }
+                >
+                  <a>Procedures</a>
+                </li>
+              </Link>
+            </Header.LinkItem>
+            <Header.LinkItem>
+              <Link href="/about">
+                <li
+                  className={
+                    router.pathname == "/about" ? "active" : "not-active"
+                  }
+                >
+                  <a>Meet Dr Lutch</a>
+                </li>
+              </Link>
+            </Header.LinkItem>
 
-            <Link href="/contacts">
-              <li
-                className={
-                  router.pathname == "/contacts" ? "active" : "not-active"
-                }
-              >
-                <a>Contact</a>
-              </li>
-            </Link>
+            <Header.LinkItem>
+              <Link href="/contacts">
+                <li
+                  className={
+                    router.pathname == "/contacts" ? "active" : "not-active"
+                  }
+                >
+                  <a>Contact</a>
+                </li>
+              </Link>
+            </Header.LinkItem>
           </Header.NavItems>
+          <NavMobile>
+            <NavMobile.Icon></NavMobile.Icon>
+          </NavMobile>
         </Header.Nav>
       </Header.Inner>
     </Header>

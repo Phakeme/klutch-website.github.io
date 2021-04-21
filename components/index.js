@@ -1,4 +1,5 @@
 export { default as Header } from "./header/";
+export { default as NavMobile } from "./navMobile/";
 export { default as Hero } from "./pages/home/hero";
 export { default as About } from "./pages/about/";
 export { default as ContactForm } from "./contactForm/";

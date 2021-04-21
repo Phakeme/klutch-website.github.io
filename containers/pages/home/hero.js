@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Hero } from "../../../components/";
 
-export function HeroContainer({ children }) {
+export function HeroContainer() {
   return (
     <Hero>
       <Hero.Wrapper>
