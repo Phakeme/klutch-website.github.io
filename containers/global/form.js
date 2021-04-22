@@ -64,7 +64,6 @@ export function FormContainer({ children }) {
                     placeholder="First Name"
                     onChange={formik.handleChange}
                     value={formik.values.firstName}
-                    // required
                     // autoComplete="off"
                   />
                   {formik.touched.firstName && formik.errors.firstName ? (
@@ -107,7 +106,6 @@ export function FormContainer({ children }) {
                     onChange={formik.handleChange}
                     value={formik.values.lastName}
                     placeholder="Last Name"
-                    // required
                     // autoComplete="off"
                   />
                   {formik.touched.lastName && formik.errors.lastName ? (
@@ -139,7 +137,6 @@ export function FormContainer({ children }) {
                     name="appointmentTime"
                     onChange={formik.handleChange}
                     value={formik.values.appointmentTime}
-                    // required
                   />
                 </ContactForm.InputField>
               </ContactForm.Item>
@@ -153,7 +150,6 @@ export function FormContainer({ children }) {
                   onChange={formik.handleChange}
                   value={formik.values.message}
                   placeholder="Message / reason for appointment"
-                  // required
                 />
                 {formik.touched.message && formik.errors.message ? (
                   <ContactForm.Error>{formik.errors.message}</ContactForm.Error>

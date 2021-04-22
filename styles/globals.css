@@ -1,8 +1,8 @@
 :root {
   --color-white: white;
   --color-black: black;
-  --color-pink: #d26f8f;
-  --color-pink-dark: #f584a9;
+  --color-pink: #f584a9;
+  --color-pink-dark: #d26f8f;
   --color-pink-darkest: #9c526a;
   --color-grey: #e5e5e5;
 }
@@ -46,7 +46,7 @@ h4 {
 .active {
   padding: 15px;
   font-size: 14px;
-  background-color: #d26f8f;
+  background-color: var(--color-pink);
   text-transform: uppercase;
   height: 48px;
   list-style: none;

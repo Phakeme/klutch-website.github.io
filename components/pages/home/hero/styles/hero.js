@@ -17,12 +17,13 @@ export const Wrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  /* padding-top: 10px; */
-  /* height: 100%; */
   text-align: center;
   margin: auto;
-  width: 70%;
+  width: 80%;
   padding-bottom: 10px;
+  @media (max-width: 650px) {
+    width: 90%;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -30,14 +31,15 @@ export const H1 = styled.h1`
   font-size: 50px;
   letter-spacing: 1px;
   font-weight: 100;
-  /* margin-top: 13px; */
   margin-bottom: 18px;
+  @media (max-width: 650px) {
+    font-size: 40px;
+  }
 `;
 
 export const Showcase = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  /* min-height: 245px; */
   width: auto;
   background-color: white;
 `;
@@ -45,8 +47,6 @@ export const Showcase = styled.div`
 export const Card = styled.div`
   padding: 30px;
   height: 100%;
-  /* min-height: 245px; */
-  /* background-color: #d26f8f; */
 `;
 
 export const Links = styled.div`
@@ -54,29 +54,11 @@ export const Links = styled.div`
 `;
 
 export const SubHeading = styled.h3`
-  /* background-color: blueviolet; */
   font-size: 28px;
   line-height: 40px;
   font-weight: 100;
+  @media (max-width: 650px) {
+    font-size: 18px;
+  }
   /* margin-top: 0; */
-`;
-
-export const Button = styled.div`
-  padding: 10px 30px 33px 30px;
-  height: 48px;
-  max-width: fit-content;
-  margin: auto;
-  cursor: pointer;
-  background-color: var(--color-pink);
-
-  :hover {
-    background-color: var(--color-pink-dark);
-  }
-
-  > h3 {
-    padding: 0;
-    font-weight: 100;
-    /* font-weight: 100; */
-    margin: 0;
-  }
 `;

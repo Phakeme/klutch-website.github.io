@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   min-height: 646px;
-  margin: 70px 0;
+  margin: 60px 0;
 `;
 
 export const Item = styled.div`

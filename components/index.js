@@ -8,3 +8,5 @@ export { default as AboutSummary } from "./pages/home/aboutSummary/";
 export { default as WhyChooseUs } from "./pages/home/whyChooseUs/";
 export { default as Footer } from "./footer/";
 export { default as Banner } from "./pages/procedures/banner/";
+// Utils
+export { default as Button } from "./global/utils/button/";

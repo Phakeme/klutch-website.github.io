@@ -17,7 +17,10 @@ export const SocialLinks = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 1250px) {
+    padding: 0 30px;
+  }
+  @media (max-width: 600px) {
     display: none !important;
   }
 `;
@@ -40,8 +43,9 @@ export const SocialDetails = styled.div`
 
 export const Logo = styled.img`
   width: 350px;
+  margin-right: 20px;
   @media only screen and (max-width: 1000px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -74,14 +78,14 @@ export const LinkItem = styled.div`
 `;
 
 export const LinkItemActive = styled.div`
-  padding: 15px;
-  font-size: 14px;
-  background-color: #d26f8f;
-  text-transform: uppercase;
-  height: 48px;
-  :hover {
-    background-color: #d26f8f;
-  }
+  /* padding: 15px; */
+  /* font-size: 14px; */
+  /* background-color: #d26f8f; */
+  /* text-transform: uppercase; */
+  /* height: 48px; */
+  /* :hover { */
+  /* background-color: #d26f8f; */
+  /* } */
 `;
 
 export const Address = styled.div`

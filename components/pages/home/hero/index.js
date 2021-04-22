@@ -42,7 +42,3 @@ Hero.SubHeading = function HeroSubHeading({ children, ...restProps }) {
 Hero.Links = function HeroLinks({ children, ...restProps }) {
   return <Links {...restProps}>{children}</Links>;
 };
-
-Hero.Button = function HeroButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
-};

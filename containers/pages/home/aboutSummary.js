@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { AboutSummary } from "../../../components";
+import { AboutSummary, Button } from "../../../components";
 
 export function AboutSummaryContainer({ children }) {
   return (
@@ -37,12 +37,12 @@ export function AboutSummaryContainer({ children }) {
             Plastic and Reconstructive Surgery and spent a year thereafter in
             state service before entering into full-time private practice.
           </p>
-
-          <Link href="/about">
+          <Button to="/about" text="Read more.." />
+          {/* <Link href="/about">
             <a>
               <h3> Read more...</h3>
             </a>
-          </Link>
+          </Link> */}
         </AboutSummary.Item>
       </AboutSummary.Wrapper>
     </AboutSummary>
