@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   height: 48px;
   color: white;
   max-width: fit-content;
-  margin: auto;
   cursor: pointer;
   background-color: var(--color-pink);
 

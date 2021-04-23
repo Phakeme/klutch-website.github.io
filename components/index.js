@@ -10,3 +10,4 @@ export { default as Footer } from "./footer/";
 export { default as Banner } from "./pages/procedures/banner/";
 // Utils
 export { default as Button } from "./global/utils/button/";
+export { default as Divider } from "./global/utils/divider/";

@@ -17,7 +17,8 @@ export const Wrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  text-align: center;
+  justify-content: center;
+  text-align: start;
   margin: auto;
   width: 80%;
   padding-bottom: 10px;

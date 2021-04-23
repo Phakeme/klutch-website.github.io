@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   min-height: 300px;
   background-color: var(--color-black);
-  margin-top: 70px;
+  //margin-top: 70px;
   color: var(--color-white);
   padding: 60px;
 `;
