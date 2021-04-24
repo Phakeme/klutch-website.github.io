@@ -1,15 +1,13 @@
 import { FooterContainer } from "../containers/global/footer";
 import { HeaderContainer } from "../containers/pages/home/header";
-import { AboutContainer } from "../containers/pages/about/about";
+import { BannerContainer } from "../containers/procedures/banner";
 
 export default function FirstPost() {
   return (
     <>
-      <>
-        <HeaderContainer />
-        <AboutContainer />
-        <FooterContainer />
-      </>
+      <HeaderContainer />
+      <BannerContainer />
+      <FooterContainer />
     </>
   );
 }

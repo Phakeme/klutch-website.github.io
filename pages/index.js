@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import HeroSection from '../Components/HeroSection'
-import WhyChooseUs from '../Components/WhyChooseUs'
-import styles from '../styles/Home.module.css'
-// import logo from '/../public/brand-logo.svg'
-// import Image from 'next/image'
+import Head from "next/head";
+import { HeaderContainer } from "../containers/pages/home/header";
+import { HeroContainer } from "../containers/pages/home/hero";
+import { AboutSummaryContainer } from "../containers/pages/home/aboutSummary";
+import { WhyChooseUsContainer } from "../containers/whyChooseUs";
+import { FormContainer } from "../containers/global/form";
+import { FooterContainer } from "../containers/global/footer";
 
 export default function Home() {
   return (
@@ -12,13 +13,12 @@ export default function Home() {
         <title>Klutch Plastic Surgery Website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-   
-        <HeroSection text="Hero Section"/>
-        <br/>
-        <HeroSection text="Services Section"/>
-        <br/>
-        <WhyChooseUs text="Why choose us"/>
+      <HeaderContainer />
+      <HeroContainer />
+      <AboutSummaryContainer />
+      <FormContainer />
+      <WhyChooseUsContainer />
+      <FooterContainer />
     </div>
-  )
+  );
 }

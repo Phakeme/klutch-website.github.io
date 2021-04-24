@@ -1,0 +1,50 @@
+[
+  {
+    "id": "surgical-procedures",
+    "title": "surgical procedures",
+    "types": [
+      {
+        "id": "face",
+        "name": "face",
+        "surgicalItems": [
+          "Botulinum Toxin",
+          "Fillers",
+          "Chemical Peels",
+          "Vampire Facials",
+          "24K Gold Collagen Induction",
+          "Threadlift",
+          "Fat dessolving injections",
+          "vein treatments"
+        ]
+      },
+      {
+        "id": "breast",
+        "name": "breast",
+        "surgicalItems": [
+          "Botulinum Toxin",
+          "Fillers",
+          "Chemical Peels",
+          "Vampire Facials",
+          "24K Gold Collagen Induction",
+          "Threadlift",
+          "Fat dessolving injections",
+          "vein treatments"
+        ]
+      },
+      {
+        "id": "body",
+        "name": "body",
+        "surgicalItems": [
+          "Botulinum Toxin",
+          "Fillers",
+          "Chemical Peels",
+          "Vampire Facials",
+          "24K Gold Collagen Induction",
+          "Threadlift",
+          "Fat dessolving injections",
+          "vein treatments"
+        ]
+      }
+    ]
+  }
+]

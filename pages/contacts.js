@@ -1,7 +1,13 @@
-import HeroSection from "../Components/HeroSection";
+import { FooterContainer } from "../containers/global/footer";
+import { FormContainer } from "../containers/global/form";
+import { HeaderContainer } from "../containers/pages/home/header";
 
 export default function FirstPost() {
-    return (<>
-    <HeroSection text='Contacts'/>
-</>)
-  }
+  return (
+    <>
+      <HeaderContainer />
+      <FormContainer />
+      <FooterContainer />
+    </>
+  );
+}
