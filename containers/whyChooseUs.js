@@ -7,7 +7,7 @@ import {
   FaClinicMedical,
 } from "react-icons/fa";
 
-export function WhyChooseUsContainer({ children }) {
+export function WhyChooseUsContainer() {
   return (
     <Divider>
       <WhyChooseUs>
