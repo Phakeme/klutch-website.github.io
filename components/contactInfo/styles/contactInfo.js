@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-left: 30px;
+  @media only screen and (max-width: 750px) {
+    display: none;
+  }
 `;
 
 export const Wrapper = styled.div`
-  @media only screen and (max-width: 933px) {
-    display: none;
-  }
+ 
 `;
 
 export const Details = styled.div``;

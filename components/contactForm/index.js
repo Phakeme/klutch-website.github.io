@@ -8,6 +8,7 @@ import {
   Item,
   Image,
   InputField,
+  InputArea,
   Textarea,
   Error,
 } from "./styles/contactForm";
@@ -56,4 +57,11 @@ ContactForm.Textarea = function ContactFormItemTextarea({
   ...restProps
 }) {
   return <Textarea {...restProps}>{children}</Textarea>;
+};
+
+ContactForm.InputArea = function ContactFormItemInputArea({
+  children,
+  ...restProps
+}) {
+  return <InputArea {...restProps}>{children}</InputArea>;
 };
