@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-import { ContactForm, Divider } from "../../components";
+import { ContactForm } from "../../components";
 import { ContactInfoContainer } from "./contactInfo";
 
 const phoneRegExp = /^(\+{0,})(\d{0,})([(]{1}\d{1,3}[)]{0,}){0,}(\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}(\s){0,}$/gm;
@@ -48,9 +48,9 @@ export function FormContainer() {
         <h2>Schedule an appointment</h2>
         <span>
           This is not an actual appointment until confirmed. The below form is
-          to request an appontment, we will get back to you to confirm
-          the requested date and time is available.
-          </span>
+          to request an appontment, we will get back to you to confirm the
+          requested date and time is available.
+        </span>
         <ContactForm.Wrapper>
           <ContactForm.Form>
             <ContactForm.Inner>
@@ -65,7 +65,7 @@ export function FormContainer() {
                       placeholder="First Name"
                       onChange={formik.handleChange}
                       value={formik.values.firstName}
-                    // autoComplete="off"
+                      // autoComplete="off"
                     />
                     {formik.touched.firstName && formik.errors.firstName ? (
                       <ContactForm.Error>
@@ -81,7 +81,7 @@ export function FormContainer() {
                       onChange={formik.handleChange}
                       value={formik.values.lastName}
                       placeholder="Last Name"
-                    // autoComplete="off"
+                      // autoComplete="off"
                     />
                     {formik.touched.lastName && formik.errors.lastName ? (
                       <ContactForm.Error>
@@ -97,7 +97,7 @@ export function FormContainer() {
                       onChange={formik.handleChange}
                       value={formik.values.email}
                       placeholder="Email"
-                    // required
+                      // required
                     />
                     {formik.touched.email && formik.errors.email ? (
                       <ContactForm.Error>
@@ -113,7 +113,7 @@ export function FormContainer() {
                       onChange={formik.handleChange}
                       value={formik.values.phoneNumber}
                       placeholder="Phone number"
-                    // required
+                      // required
                     />
                     {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
                       <ContactForm.Error>
@@ -128,7 +128,7 @@ export function FormContainer() {
                       type="date"
                       onChange={formik.handleChange}
                       value={formik.values.appointmentDate}
-                    // required
+                      // required
                     />
                   </ContactForm.InputField>
                   <ContactForm.InputField>
@@ -154,15 +154,13 @@ export function FormContainer() {
                   placeholder="Message / reason for appointment"
                 />
                 {formik.touched.message && formik.errors.message ? (
-                  <ContactForm.Error>
-                    {formik.errors.message}
-                  </ContactForm.Error>
+                  <ContactForm.Error>{formik.errors.message}</ContactForm.Error>
                 ) : null}
               </ContactForm.Textarea>
               <button type="submit">
                 <span style={{ fontSize: "16px", color: "#fff" }}>
                   Send message
-                  </span>
+                </span>
               </button>
             </ContactForm.Item>
           </ContactForm.Form>

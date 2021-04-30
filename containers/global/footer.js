@@ -11,14 +11,17 @@ export function FooterContainer({ children }) {
             <div>
               <FaRegMap size="3rem" color="#d26f8f" />
             </div>
-            <a
-              href="https://www.google.com/maps/search/krugersdorp+netcare/@-26.0834202,27.7677978,13z/data=!3m1!4b1"
-              target="blank"
-            >
-              <span style={{ marginLeft: "30px" }}>
-                Find Us On Google Maps
-                </span>
-            </a>
+            <div>
+              <p style={{ marginLeft: "30px", marginTop: "0" }}>
+                <a
+                  href="https://www.google.com/maps/search/krugersdorp+netcare/@-26.0834202,27.7677978,13z/data=!3m1!4b1"
+                  target="blank"
+                >
+                  Find Us On Google Maps
+                </a>
+              </p>
+              <h3 style={{ marginLeft: "30px" }}>Come and visit us</h3>
+            </div>
           </Footer.Card>
           <Footer.Card>
             <Footer.Card>
@@ -28,7 +31,7 @@ export function FooterContainer({ children }) {
               <div>
                 <p style={{ marginLeft: "30px", marginTop: "0" }}>
                   Book an appointment
-                  </p>
+                </p>
                 <h3 style={{ marginLeft: "30px" }}>(031) 301 0418</h3>
               </div>
             </Footer.Card>
@@ -41,8 +44,10 @@ export function FooterContainer({ children }) {
               <div>
                 <p style={{ marginLeft: "30px", marginTop: "0" }}>
                   Feel free to message us!
-                  </p>
-                <h3 style={{ marginLeft: "30px" }}>ouremail.website.com</h3>
+                </p>
+                <h3 style={{ marginLeft: "30px" }}>
+                  info@klutchplasticsugery.com
+                </h3>
               </div>
             </Footer.Card>
           </Footer.Card>

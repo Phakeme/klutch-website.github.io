@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { ContactInfo } from "../../components/";
 import { IoMdPin, IoMdMail } from "react-icons/io";
 import { RiContactsBookUploadFill } from "react-icons/ri";
 import { FaHourglassHalf } from "react-icons/fa";
 
 export function ContactInfoContainer() {
+  const [contactInfo, setContactInfo] = useState("");
+
+  useEffect(() => {
+    axios.get("/api/contactinfo").then((response) => {
+      setContactInfo(response.data);
+    });
+  }, []);
+
   return (
     <ContactInfo>
       <ContactInfo.Wrapper name="contact">
@@ -27,7 +36,7 @@ export function ContactInfoContainer() {
 
               <ContactInfo.Info>
                 <span>CONTACT US</span>
-                <p>(031) 100 0012</p>
+                <p>{contactInfo.tell}</p>
               </ContactInfo.Info>
             </ContactInfo.Grid>
 
@@ -37,7 +46,7 @@ export function ContactInfoContainer() {
               </ContactInfo.Icon>
               <ContactInfo.Info>
                 <span>EMAIL</span>
-                <p>info@klutchplasticsugery.com</p>
+                <p>{contactInfo.email}</p>
               </ContactInfo.Info>
             </ContactInfo.Grid>
 
@@ -48,11 +57,9 @@ export function ContactInfoContainer() {
 
               <ContactInfo.Info>
                 <span>OPEN HOURS</span>
-                <p>
-                  M-F: 8am – 5pm <br />
-                  Sat: 10am – 2pm <br />
-                  Sun: Closed
-                </p>
+                {/* <p>{contactInfo.openHours.sunday}</p> */}
+                {/* <p>{contactInfo.openHours.saturday}</p>
+                <p>{contactInfo.openHours.sunday}</p> */}
               </ContactInfo.Info>
             </ContactInfo.Grid>
           </ContactInfo.Inner>

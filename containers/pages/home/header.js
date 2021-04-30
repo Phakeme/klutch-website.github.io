@@ -1,11 +1,11 @@
-import React from "react";
-import { Header, NavMobile } from "../../../components/";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { Header, NavMobile } from "../../../components/";
 import { useRouter } from "next/router";
 import { SocialIcon } from "react-social-icons";
 import { FaRegMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
-export function HeaderContainer({ children }) {
+export function HeaderContainer() {
   const router = useRouter();
   return (
     <Header>
