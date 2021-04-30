@@ -138,3 +138,13 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 50px var(--color-grey) inset; /*your box-shadow*/
   -webkit-text-fill-color: #333;
 }
+
+.margin {
+  margin-top: 60px;
+}
+
+@media (max-width: 1230px) {
+  .margin{
+    margin-top: 0;
+  }
+}

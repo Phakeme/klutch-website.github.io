@@ -2,7 +2,7 @@ import Head from "next/head";
 import { HeaderContainer } from "../containers/pages/home/header";
 import { HeroContainer } from "../containers/pages/home/hero";
 import { AboutSummaryContainer } from "../containers/pages/home/aboutSummary";
-import { WhyChooseUsContainer } from "../containers/whyChooseUs";
+import { WhyChooseUsContainer } from "../containers/pages/home/whyChooseUs";
 import { FormContainer } from "../containers/global/form";
 import { FooterContainer } from "../containers/global/footer";
 
@@ -16,9 +16,13 @@ export default function Home() {
       <HeaderContainer />
       <HeroContainer />
       <AboutSummaryContainer />
-      <FormContainer />
+      <div className="margin">
+        <FormContainer />
+      </div>
       <WhyChooseUsContainer />
-      <FooterContainer />
+      <div className="margin">
+        <FooterContainer />
+      </div>
     </div>
   );
 }

@@ -15,11 +15,7 @@ export const Inner = styled.footer`
 `;
 
 export const Card = styled.div`
-  font-size: 20px;
   display: flex;
+  justify-content: center;
   height: 100%;
-
-  :not(:last-child) {
-    border-right: 1px solid black;
-  }
 `;
