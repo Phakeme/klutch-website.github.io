@@ -65,16 +65,16 @@ const database = {
     tell: "(031) 100 0012",
     email: "info@klutchplasticsugery.com",
     address: ["477 Anton Lembede St, Durban Central"],
-    openHours: {
-      mondayToFriday: "8am – 5pm",
-      saturday: "8am – 2pm",
-      sunday: "Closed",
-    },
     socialLinks: {
-      facebook: "yyyyy",
+      facebook: "",
       twitter: "",
     },
   },
+  opendays: [{
+    weekdays: "Weekdays: 8am – 5pm",
+    saturday: "Saturday: 8am – 2pm",
+    sunday: "Sunday: Closed",
+  }],
 };
 
 Mock.onGet("/api/information").reply((config) => {
@@ -82,8 +82,8 @@ Mock.onGet("/api/information").reply((config) => {
   return [200, response];
 });
 
-Mock.onGet("/api/services").reply((config) => {
-  const response = database.services;
+Mock.onGet("/api/opendays").reply((config) => {
+  const response = database.opendays;
   return [200, response];
 });
 

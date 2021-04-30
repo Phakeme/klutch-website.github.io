@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios'
 import Link from "next/link";
 import { Header, NavMobile } from "../../../components/";
 import { useRouter } from "next/router";
@@ -6,6 +7,14 @@ import { SocialIcon } from "react-social-icons";
 import { FaRegMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export function HeaderContainer() {
+  const [contactinfo, setContactinfo] = useState('')
+
+  useEffect(() => {
+    axios.get('/api/contactinfo').then(response => {
+      setContactinfo(response.data)
+    })
+  }, [])
+
   const router = useRouter();
   return (
     <Header>
@@ -19,11 +28,11 @@ export function HeaderContainer() {
             </Header.Address>
             <Header.Tell>
               <FaPhoneAlt size="1rem" />
-              <span>(031) 100 0012</span>
+              <span>{contactinfo.tell}</span>
             </Header.Tell>
             <div>
               <FaEnvelope size="1rem" />
-              <span>info@klutchplasticsugery.com</span>
+              <span>{contactinfo.email}</span>
             </div>
           </Header.SocialDetails>
           <div>

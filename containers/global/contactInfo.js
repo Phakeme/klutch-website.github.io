@@ -5,12 +5,21 @@ import { IoMdPin, IoMdMail } from "react-icons/io";
 import { RiContactsBookUploadFill } from "react-icons/ri";
 import { FaHourglassHalf } from "react-icons/fa";
 
-export function ContactInfoContainer() {
+export function ContactInfoContainer({ children }) {
   const [contactInfo, setContactInfo] = useState("");
+  const [opendays, setOpendays] = useState([])
 
   useEffect(() => {
     axios.get("/api/contactinfo").then((response) => {
       setContactInfo(response.data);
+      // console.log(response.data.openHours.sunday)
+    });
+  }, []);
+
+  useEffect(() => {
+    axios.get("/api/opendays").then((response) => {
+      setOpendays(response.data);
+      // console.log(response.data.openHours.sunday)
     });
   }, []);
 
@@ -57,9 +66,13 @@ export function ContactInfoContainer() {
 
               <ContactInfo.Info>
                 <span>OPEN HOURS</span>
-                {/* <p>{contactInfo.openHours.sunday}</p> */}
-                {/* <p>{contactInfo.openHours.saturday}</p>
-                <p>{contactInfo.openHours.sunday}</p> */}
+                {opendays.map(item => (
+                  <div key={item.sunday}>
+                    <p>{item.weekdays}</p>
+                    <p>{item.saturday}</p>
+                    <p>{item.sunday}</p>
+                  </div>
+                ))}
               </ContactInfo.Info>
             </ContactInfo.Grid>
           </ContactInfo.Inner>

@@ -1,8 +1,15 @@
-import React from "react";
-import { Footer, Hero } from "../../components/index";
+import React, { useState, useEffect } from "react";
+import axios from 'axios'
+import { Footer } from "../../components/index";
 import { FaRegMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
-export function FooterContainer({ children }) {
+export function FooterContainer() {
+  const [contactinfo, setContactinfo] = useState('')
+  useEffect(() => {
+    axios.get('/api/contactinfo').then(response => {
+      setContactinfo(response.data)
+    })
+  }, [])
   return (
     <Footer>
       <Footer.Wrapper>
@@ -32,7 +39,7 @@ export function FooterContainer({ children }) {
                 <p style={{ marginLeft: "30px", marginTop: "0" }}>
                   Book an appointment
                 </p>
-                <h3 style={{ marginLeft: "30px" }}>(031) 301 0418</h3>
+                <h3 style={{ marginLeft: "30px" }}>{contactinfo.tell}</h3>
               </div>
             </Footer.Card>
           </Footer.Card>
@@ -46,7 +53,7 @@ export function FooterContainer({ children }) {
                   Feel free to message us!
                 </p>
                 <h3 style={{ marginLeft: "30px" }}>
-                  info@klutchplasticsugery.com
+                  {contactinfo.email}
                 </h3>
               </div>
             </Footer.Card>
