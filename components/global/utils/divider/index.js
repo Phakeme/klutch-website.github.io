@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Context } from "react";
 import { Wrapper } from "./styles/divider";
 
 function Devider(props) {
