@@ -21,9 +21,7 @@ export default function Home() {
         <FormContainer />
       </div>
       <WhyChooseUsContainer />
-      <div className="margin">
-        <FooterContainer />
-      </div>
+      <FooterContainer />
     </div>
   );
 }

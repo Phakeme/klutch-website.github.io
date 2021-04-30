@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   min-height: 300px;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
   padding: 60px;
 `;
 

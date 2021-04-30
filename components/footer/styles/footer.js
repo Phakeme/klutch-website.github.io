@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.footer`
-  background-color: #fff;
-  color: #000;
+  background-color: var(--color-black);
+  color: var(--color-white);
   padding: 30px;
   width: 100%;
 `;
