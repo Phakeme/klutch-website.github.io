@@ -11,15 +11,16 @@ export function AboutContainer() {
           {Data.map((item, index) => (
             <div key={item.title}>
               <div key={index}>
-                <h2
-                  style={{ marginTop: "0", marginBottom: "40px" }}
-                  key={item.title}
-                >
-                  {item.title}
-                </h2>
+                <About.TextSection>
+                  <h2
+                    style={{ marginTop: "0", marginBottom: "40px" }}
+                    key={item.title}
+                  >
+                    {item.title}
+                  </h2>
+                </About.TextSection>
                 {item.subSections.map((item, index) => (
                   <About.TextSection key={index}>
-                    <div>{item.icon}</div>
                     <div>
                       <h3 style={{ color: "#d26f8f" }} key={item.subTitle}>
                         {item.subTitle}

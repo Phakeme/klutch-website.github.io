@@ -4,19 +4,15 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 15px 30px;
-  /* background-color: var(--color-white); */
   color: var(--color-black);
 `;
 
 export const Title = styled.h3`
-  /* font-size: 30px; */
   margin: 0;
 `;
 
 export const ButtonFrame = styled.div`
   display: flex;
-  /* background-color: red; */
-  /* margin-left: 20px; */
 `;
 
 export const Button = styled.div`

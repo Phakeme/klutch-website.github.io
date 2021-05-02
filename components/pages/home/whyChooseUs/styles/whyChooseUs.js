@@ -5,6 +5,9 @@ export const Wrapper = styled.section`
   background-color: var(--color-white);
   color: var(--color-black);
   padding: 60px;
+  @media (max-width: 1230px) {
+    border-top: 1px solid var(--color-black);
+  }
 `;
 
 export const Title = styled.h2`
@@ -31,9 +34,6 @@ export const GridItemInner = styled.div`
   display: flex;
 `;
 
-export const Icon = styled.div`
-  color: var(--color-pink);
-`;
 export const Info = styled.div`
   margin-left: 10px;
   font-size: 20px;

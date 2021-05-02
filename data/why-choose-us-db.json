@@ -1,0 +1,26 @@
+{
+    "id": "WhychooseDrUs",
+    "title": "Why choose Dr Kajal Lutchminarian",
+    "benefits": [
+        {
+            "id": "1",
+            "icon": "",
+            "body": "Highly qualified and passionate about what we do"
+        },
+        {
+            "id": "2",
+            "icon": "FaAward",
+            "body": "We go the extra mile!"
+        },
+        {
+            "id": "3",
+            "icon": "FaClinicMedical",
+            "body": "We are available to speak to family"
+        },
+        {
+            "id": "4",
+            "icon": "FaRegClock",
+            "body": "Efficient and friendly service"
+        }
+    ]
+}

@@ -3,16 +3,20 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 350px 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   min-height: 425px;
   background-color: var(--color-white);
   color: var(--color-black);
   padding: 60px;
+  @media (max-width: 870px){
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 `;
 
 export const TextSection = styled.div`
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 1fr;
   text-align: justify;
   grid-gap: 10px;
 
@@ -20,6 +24,9 @@ export const TextSection = styled.div`
     > h3 {
       margin-top: 0;
     }
+  }
+  @media (max-width: 870px){
+    padding: 0 30px ;
   }
 `;
 

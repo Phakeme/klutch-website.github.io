@@ -50,10 +50,15 @@ WhyChooseUs.Info = function WhyChooseUsInfo({ children, ...restProps }) {
   return <Info {...restProps}>{children}</Info>;
 };
 
-WhyChooseUs.Icon = function WhyChooseUsIcon({ children, ...restProps }) {
-  return <Icon {...restProps}>{children}</Icon>;
-};
-
 WhyChooseUs.Card = function WhyChooseUsCard({ children, ...restProps }) {
   return <Card {...restProps}>{children}</Card>;
+};
+
+WhyChooseUs.Icon = function WhyChooseUsIcon(props) {
+  return (
+    <div style={{
+      fontSize: "5rem",
+      color: "#f584a9"
+    }}>{props.icon}</div>
+  );
 };

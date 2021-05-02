@@ -9,9 +9,7 @@ export function FooterContainer() {
       <Footer.Wrapper>
         <Footer.Inner>
           <Footer.Card>
-            <div>
-              <FaRegMap size="3rem" color="#d26f8f" />
-            </div>
+            <Footer.Icon icon={<FaRegMap />} />
             <div>
               <Footer.Text>
                 <a
@@ -26,9 +24,7 @@ export function FooterContainer() {
           </Footer.Card>
           <Footer.Card>
             <Footer.Card>
-              <div>
-                <FaPhoneAlt size="2rem" color="#d26f8f" />
-              </div>
+              <Footer.Icon icon={<FaPhoneAlt />} />
               <div>
                 <Footer.Text>Book an appointment</Footer.Text>
                 <Footer.H4>{Data.tell}</Footer.H4>
@@ -37,9 +33,7 @@ export function FooterContainer() {
           </Footer.Card>
           <Footer.Card>
             <Footer.Card>
-              <div>
-                <FaEnvelope size="2rem" color="#d26f8f" />
-              </div>
+              <Footer.Icon icon={<FaEnvelope />} />
               <div>
                 <Footer.Text>Feel free to message us!</Footer.Text>
                 <Footer.H4>

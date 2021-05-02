@@ -25,3 +25,12 @@ Footer.Text = function FooterText({ children, ...restProps }) {
 Footer.H4 = function FooterH4({ children, ...restProps }) {
   return <H4 {...restProps}>{children}</H4>;
 };
+
+Footer.Icon = function FooterIcon(props) {
+  return (
+    <div style={{
+      fontSize: "2rem",
+      color: "#f584a9"
+    }}>{props.icon}</div>
+  );
+};
