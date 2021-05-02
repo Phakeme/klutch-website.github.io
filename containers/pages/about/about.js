@@ -1,8 +1,8 @@
 import React from "react";
-import Data from "./Data.json";
+import Data from "../../../data/about-db.json";
 import { About } from "../../../components/";
 
-export function AboutContainer({ children }) {
+export function AboutContainer() {
   return (
     <About>
       <About.Wrapper>
@@ -36,22 +36,3 @@ export function AboutContainer({ children }) {
     </About>
   );
 }
-{
-  /* <div style={{ backgroundColor: "red" }}>{item.t}</div> */
-}
-
-// {data.map((item) => (
-//     <div key={item.id}>
-//       <p>{item.title}</p>
-//       {item.types.map((item) => (
-//         <div key={item.id}>
-//           <h2>{item.title}</h2>
-//           <ul key={item.id}>
-//             {item.surgicalTypes.map((surgical) => (
-//               <li key={surgical}>{surgical}</li>
-//             ))}
-//           </ul>
-//         </div>
-//       ))}
-//     </div>
-//   ))}

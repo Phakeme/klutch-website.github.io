@@ -5,7 +5,6 @@ import { AboutSummaryContainer } from "../containers/pages/home/aboutSummary";
 import { WhyChooseUsContainer } from "../containers/pages/home/whyChooseUs";
 import { FormContainer } from "../containers/global/form";
 import { FooterContainer } from "../containers/global/footer";
-import "../data/main/db/database";
 
 export default function Home() {
   return (

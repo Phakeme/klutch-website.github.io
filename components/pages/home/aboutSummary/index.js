@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../../../global/container/";
-import { Wrapper, Item } from "./styles/aboutSummary";
+import { Wrapper, Item, Text } from "./styles/aboutSummary";
 
 export default function AboutSummary({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -15,4 +15,8 @@ AboutSummary.Wrapper = function AboutSummaryWrapper({
 
 AboutSummary.Item = function AboutSummaryItem({ children, ...restProps }) {
   return <Item {...restProps}>{children}</Item>;
+};
+
+AboutSummary.Text = function AboutSummaryText({ children, ...restProps }) {
+  return <Text {...restProps}>{children}</Text>;
 };

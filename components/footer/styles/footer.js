@@ -19,3 +19,11 @@ export const Card = styled.div`
   justify-content: center;
   height: 100%;
 `;
+
+export const Text = styled.p`
+margin: 0 0 0 30px;
+`;
+
+export const H4 = styled.h4`
+margin-left:30px;
+`;

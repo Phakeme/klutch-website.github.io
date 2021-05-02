@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios'
+import React from "react";
+import Data from '../../data/contacts-db.json'
 import { Footer } from "../../components/index";
 import { FaRegMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export function FooterContainer() {
-  const [contactinfo, setContactinfo] = useState('')
-  useEffect(() => {
-    axios.get('/api/contactinfo').then(response => {
-      setContactinfo(response.data)
-    })
-  }, [])
   return (
     <Footer>
       <Footer.Wrapper>
@@ -19,15 +13,15 @@ export function FooterContainer() {
               <FaRegMap size="3rem" color="#d26f8f" />
             </div>
             <div>
-              <p style={{ marginLeft: "30px", marginTop: "0" }}>
+              <Footer.Text>
                 <a
                   href="https://www.google.com/maps/search/krugersdorp+netcare/@-26.0834202,27.7677978,13z/data=!3m1!4b1"
                   target="blank"
                 >
                   Find Us On Google Maps
                 </a>
-              </p>
-              <h3 style={{ marginLeft: "30px" }}>Come and visit us</h3>
+              </Footer.Text>
+              <Footer.H4>Come and visit us</Footer.H4>
             </div>
           </Footer.Card>
           <Footer.Card>
@@ -36,10 +30,8 @@ export function FooterContainer() {
                 <FaPhoneAlt size="2rem" color="#d26f8f" />
               </div>
               <div>
-                <p style={{ marginLeft: "30px", marginTop: "0" }}>
-                  Book an appointment
-                </p>
-                <h3 style={{ marginLeft: "30px" }}>{contactinfo.tell}</h3>
+                <Footer.Text>Book an appointment</Footer.Text>
+                <Footer.H4>{Data.tell}</Footer.H4>
               </div>
             </Footer.Card>
           </Footer.Card>
@@ -49,12 +41,10 @@ export function FooterContainer() {
                 <FaEnvelope size="2rem" color="#d26f8f" />
               </div>
               <div>
-                <p style={{ marginLeft: "30px", marginTop: "0" }}>
-                  Feel free to message us!
-                </p>
-                <h3 style={{ marginLeft: "30px" }}>
-                  {contactinfo.email}
-                </h3>
+                <Footer.Text>Feel free to message us!</Footer.Text>
+                <Footer.H4>
+                  {Data.email}
+                </Footer.H4>
               </div>
             </Footer.Card>
           </Footer.Card>

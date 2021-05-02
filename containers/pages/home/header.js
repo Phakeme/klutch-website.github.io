@@ -1,20 +1,12 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios'
+import React from "react";
 import Link from "next/link";
+import Data from '../../../data/contacts-db.json'
 import { Header, NavMobile } from "../../../components/";
 import { useRouter } from "next/router";
 import { SocialIcon } from "react-social-icons";
 import { FaRegMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export function HeaderContainer() {
-  const [contactinfo, setContactinfo] = useState('')
-
-  useEffect(() => {
-    axios.get('/api/contactinfo').then(response => {
-      setContactinfo(response.data)
-    })
-  }, [])
-
   const router = useRouter();
   return (
     <Header>
@@ -23,16 +15,17 @@ export function HeaderContainer() {
           <Header.SocialDetails>
             <Header.Address>
               <FaRegMap size="1.2rem" />
-              <span>Ribumed Hospital Glenwood, Berea |</span>
-              <span>Life Mount Edgecombe Hospital, Life Mount Edgecombe </span>
+              <span>{Data.address1}</span>
+              <span>|</span>
+              <span>{Data.address2}</span>
             </Header.Address>
             <Header.Tell>
               <FaPhoneAlt size="1rem" />
-              <span>{contactinfo.tell}</span>
+              <span>{Data.tell}</span>
             </Header.Tell>
             <div>
               <FaEnvelope size="1rem" />
-              <span>{contactinfo.email}</span>
+              <span>{Data.email}</span>
             </div>
           </Header.SocialDetails>
           <div>
