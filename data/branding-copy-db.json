@@ -3,6 +3,10 @@
         "Headline": "Top Female Plastic Surgeon in Durban",
         "subHeadline": "Plastic, Reconstruction and Aesthetic Surgery. Committment to excellence and attention to details.",
         "brandlogo": "",
-        "heroImage": ""
+        "heroImage": "",
+        "disclaimer": {
+            "title": "Disclaimer",
+            "body": "There is no guarantee of specific results and the results can vary from person to person. Expectations and Safety concerns will be discussed during your consultation."
+        }
     }
 }

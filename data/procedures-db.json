@@ -1,0 +1,108 @@
+[
+    {
+        "name": "Breast reduction",
+        "organ": "Breast",
+        "type": "Reconstructive",
+        "coverImage": "cover-image.jpg",
+        "images": [
+            "image.jpg"
+        ],
+        "about": "Breast reduction, also called reduction mammoplasty, is an operation in which we reduce the overall size of the breast to achieve a breast size in proportion with your body. The operation combines both a breast lift and a breast reduction.",
+        "forWho": {
+            "title": "Eligibility Criteria",
+            "intro": "Ideal candidates for a breast reduction procedure include those who:",
+            "requirements": [
+                "Have big breasts in relation to their body. The average patient will be anything bigger than a “C” cup.",
+                "Are not overweight.  Patients may be asked to lose weight prior to going ahead with the procedure.",
+                "Are above the age of 18.  There is no upper age limit."
+            ],
+            "motivation": {
+                "title": "Common Motivations",
+                "intro": "Patients with big breasts often express the following concerns:",
+                "causes": [
+                    "Back ache, shoulder ache and neck ache due to the weight of the breast.",
+                    "Rubbing or cutting of bra straps into the shoulders.",
+                    "Permanent moisture on the tummy and resulting fungal infections due to the breast overlying the skin on the tummy.",
+                    "Difficulties and discomfort during exercise.",
+                    "Unhappiness with the shape, weight and droop of the breasts."
+                ]
+            }
+        },
+        "procedureStages": [
+            {
+                "stage": "Procedure",
+                "process": [
+                    {
+                        "intro": "",
+                        "steps": [
+                            "The operation is done under general anaesthetic and takes an average of two hours.",
+                            "The breast is marked beforehand to identify where to place the nipple.",
+                            "The incisions leave a scar from around the areola down to the breast fold and to a varying length across the breast fold called the anchor scar.",
+                            "Tissue that is removed from the breast is sent to the pathologist to be assessed for abnormalities."
+                        ]
+                    }
+                ]
+            },
+            {
+                "stage": "Pre Procedure",
+                "process": [
+                    {
+                        "intro": "Before your surgery:",
+                        "steps": [
+                            "You must avoid consuming alcohol for a week prior to the procedure.",
+                            "You must not take anything that may thin your blood in the two weeks prior to the procedure."
+                        ]
+                    },
+                    {
+                        "intro": "This includes the following:",
+                        "steps": [
+                            "Anything with aspirin such as Grandpa, Anadin, Disprin, some cold and flu medications and combination pain killers (note: you may take Panado)",
+                            "All multivitamins, vitamin supplements, omegas, fish oils and green tea.",
+                            "Anything from a health shop."
+                        ]
+                    },
+                    {
+                        "intro": "Over the age of 40:",
+                        "steps": [
+                            "If you are over the age of 40, patients are requested to have a mammogram prior to the procedure to ensure we are operating on a healthy breast."
+                        ]
+                    }
+                ]
+            },
+            {
+                "stage": "Post Procedure",
+                "process": [
+                    {
+                        "intro": "After your surgery:",
+                        "steps": [
+                            "When you have awoken, eaten, and after careful assesment, you should be able to return home.",
+                            "You will wear a strong supportive bra, to keep gravity at bay and ensure a good breast position is maintained.",
+                            "You will be given painkillers.  When at home you are not to carry anything heavy or undertake any active exercise for 7-10 days.",
+                            "You will have swelling and bruising afterwards, which can vary from one side to the other but otherwise, most patients find they have managable discomfort a week after the procedure.",
+                            "I see all patients the day after surgery and again a week later, at which time I change the dressings and teach you how to look after the scarring.",
+                            "Generally the breasts scar very well.",
+                            "You can drive 7-10 days post procedure.",
+                            "No exercise for 6/52 preferably for 3/12."
+                        ]
+                    }
+                ]
+            },
+            {
+                "stage": "Risks",
+                "process": [
+                    {
+                        "intro": "Don’t be shy about discussing your concerns at your consultation. It is important that you feel comfortable talking to me.",
+                        "steps": [
+                            "A small number of patients have reported a loss of feeling in the nipple. I will discuss this with you.",
+                            "A patient may very rarely, although uncommon, develop a hematoma,* which is bleeding from the wound.  It is for this reason that prior to the procedure, you must not take any blood thinning substances.",
+                            "As with any operation, there is a small risk of infection.  In most cases, this will respond well to antibiotics but occasionally, may take longer to heal.",
+                            "Patients with big fatty breasts may develop some hard lumps after the reduction.  These soften and disappear within a few months.",
+                            "There can be a rare complication known as nipple necrosis, where the skin of the nipple can die and needs to be remade.  This is extremely uncommon but you must be made aware of the possibility.",
+                            "It is natural to feel some anxiety, whether it is excitement for your anticipated new look or stress about the operation."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
