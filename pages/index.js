@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { HeaderContainer } from "../containers/pages/home/header";
 import { HeroContainer } from "../containers/pages/home/hero";
+import { CategoriesContainer } from '../containers/pages/home/categories'
 import { AboutSummaryContainer } from "../containers/pages/home/aboutSummary";
 import { WhyChooseUsContainer } from "../containers/pages/home/whyChooseUs";
 import { FormContainer } from "../containers/global/form";
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <HeaderContainer />
       <HeroContainer />
+      <CategoriesContainer />
       <AboutSummaryContainer />
       <div className="margin">
         <FormContainer />

@@ -16,20 +16,7 @@ export function WhyChooseUsContainer() {
         <WhyChooseUs.Content>
           <WhyChooseUs.Title>{Data.title}</WhyChooseUs.Title>
           <WhyChooseUs.Grid>
-            {/* {Data.benefits.map((item, index) => (
-              <WhyChooseUs.GridItem key={index}>
-                <WhyChooseUs.GridItemInner>
-                  <WhyChooseUs.Card>
-                    <WhyChooseUs.Icon icon={item.icon} />
-                    <WhyChooseUs.Info>
-                      <span>
-                        {item.body}
-                      </span>
-                    </WhyChooseUs.Info>
-                  </WhyChooseUs.Card>
-                </WhyChooseUs.GridItemInner>
-              </WhyChooseUs.GridItem>
-            ))} */}
+
             <WhyChooseUs.GridItem>
               <WhyChooseUs.GridItemInner>
                 <WhyChooseUs.Card>
@@ -42,6 +29,7 @@ export function WhyChooseUsContainer() {
                 </WhyChooseUs.Card>
               </WhyChooseUs.GridItemInner>
             </WhyChooseUs.GridItem>
+
             <WhyChooseUs.GridItem>
               <WhyChooseUs.GridItemInner>
                 <WhyChooseUs.Card>
@@ -52,6 +40,7 @@ export function WhyChooseUsContainer() {
                 </WhyChooseUs.Card>
               </WhyChooseUs.GridItemInner>
             </WhyChooseUs.GridItem>
+
             <WhyChooseUs.GridItem>
               <WhyChooseUs.GridItemInner>
                 <WhyChooseUs.Card>
@@ -62,6 +51,7 @@ export function WhyChooseUsContainer() {
                 </WhyChooseUs.Card>
               </WhyChooseUs.GridItemInner>
             </WhyChooseUs.GridItem>
+
             <WhyChooseUs.GridItem>
               <WhyChooseUs.GridItemInner>
                 <WhyChooseUs.Card>
@@ -72,6 +62,7 @@ export function WhyChooseUsContainer() {
                 </WhyChooseUs.Card>
               </WhyChooseUs.GridItemInner>
             </WhyChooseUs.GridItem>
+
           </WhyChooseUs.Grid>
         </WhyChooseUs.Content>
       </WhyChooseUs.Wrapper>

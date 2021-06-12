@@ -8,6 +8,8 @@ export { default as AboutSummary } from "./pages/home/aboutSummary/";
 export { default as WhyChooseUs } from "./pages/home/whyChooseUs/";
 export { default as Footer } from "./footer/";
 export { default as ProceHero } from "./pages/procedures/hero/";
+export { default as Categories } from "./proceCategories/";
 export { default as ProceOverview } from "./pages/procedures/proceOverview/";
 
 export { default as Button } from "./global/utils/button/";
+export { default as Map } from "./global/utils/map/";

@@ -8,7 +8,7 @@ export default function FirstPost() {
     <>
       <HeaderContainer />
       <ProceHeroContainer />
-      <ProceOverviewContainer />
+      {/* <ProceOverviewContainer /> */}
       <FooterContainer />
     </>
   );

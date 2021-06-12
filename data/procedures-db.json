@@ -3,10 +3,7 @@
         "name": "Breast reduction",
         "organ": "Breast",
         "type": "Reconstructive",
-        "coverImage": "cover-image.jpg",
-        "images": [
-            "image.jpg"
-        ],
+        "image": "image.jpg",
         "about": "Breast reduction, also called reduction mammoplasty, is an operation in which we reduce the overall size of the breast to achieve a breast size in proportion with your body. The operation combines both a breast lift and a breast reduction.",
         "forWho": {
             "title": "Eligibility Criteria",
