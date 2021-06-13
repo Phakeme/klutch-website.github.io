@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { FooterContainer } from "../containers/global/footer";
-import { ProceHeroContainer } from "../containers/global/procedureHero";
+import { ProcedureHeroMap } from "../containers/global/procedureHero/procedureHeroMap";
 import { HeaderContainer } from "../containers/global/header/header";
+import { ProceHero } from "../components/index";
 
 export default function Contacts() {
   return (
@@ -11,7 +12,11 @@ export default function Contacts() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeaderContainer />
-      <ProceHeroContainer />
+      <ProceHero>
+        <ProceHero.Wrapper>
+          <ProcedureHeroMap currentPage="body" />
+        </ProceHero.Wrapper>
+      </ProceHero>
       <FooterContainer />
     </>
   );

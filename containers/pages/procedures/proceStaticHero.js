@@ -1,7 +1,7 @@
 import React from "react";
 import { ProceHero } from "../../../components";
 
-export function ProceHeroContainer() {
+export function ProceStaticHeroContainer() {
   return (
     <ProceHero>
       <ProceHero.Wrapper>

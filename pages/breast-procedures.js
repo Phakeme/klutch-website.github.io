@@ -1,13 +1,17 @@
-import { FooterContainer } from "../containers/global/footer";
-// import { FormContainer } from "../containers/global/form";
+import { ProceHero } from "../components/index";
+import { ProcedureHeroMap } from "../containers/global/procedureHero/procedureHeroMap";
 import { HeaderContainer } from "../containers/global/header/header";
+import { FooterContainer } from "../containers/global/footer";
 
 export default function Contacts() {
   return (
     <>
       <HeaderContainer />
-      {/* <FormContainer />? */}
-      <h2>Body Procedures</h2>
+      <ProceHero>
+        <ProceHero.Wrapper>
+          <ProcedureHeroMap currentPage="breast" />
+        </ProceHero.Wrapper>
+      </ProceHero>
       <FooterContainer />
     </>
   );
