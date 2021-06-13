@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Data from '../../../data/contacts-db.json'
-import { Header, NavMobile } from "../../../components/";
+// import Data from '../.../data/contacts-db.json'
+import { HeaderMap } from "./headerMap";
+import { Header, NavMobile } from "../../../components";
 import { useRouter } from "next/router";
 import { SocialIcon } from "react-social-icons";
 import { FaRegMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -54,52 +56,15 @@ export function HeaderContainer() {
             </a>
           </Link>
           <Header.NavItems>
-            <Header.LinkItem>
-              <Link href="/">
-                <li
-                  className={router.pathname == "/" ? "active" : "not-active"}
-                >
-                  <a>Home</a>
-                </li>
-              </Link>
-            </Header.LinkItem>
-            <Header.LinkItem>
-              <Link href="/procedures">
-                <li
-                  className={
-                    router.pathname == "/procedures" ? "active" : "not-active"
-                  }
-                >
-                  <a>Procedures</a>
-                </li>
-              </Link>
-            </Header.LinkItem>
-            <Header.LinkItem>
-              <Link href="/about">
-                <li
-                  className={
-                    router.pathname == "/about" ? "active" : "not-active"
-                  }
-                >
-                  <a>Meet Dr Lutch</a>
-                </li>
-              </Link>
-            </Header.LinkItem>
-
-            <Header.LinkItem>
-              <Link href="/contacts">
-                <li
-                  className={
-                    router.pathname == "/contacts" ? "active" : "not-active"
-                  }
-                >
-                  <a>Contact</a>
-                </li>
-              </Link>
-            </Header.LinkItem>
+            <HeaderMap to="/body-procedures" label="Body" />
+            <HeaderMap to="/breast-procedures" label="Breast" />
+            <HeaderMap to="/face-procedures" label="Face" />
+            <HeaderMap to="/skin-procedures" label="Skin" />
+            <HeaderMap to="/about" label="Meet Dr Lutch" />
+            <HeaderMap to="/contacts" label="Book Consaltation" />
           </Header.NavItems>
           <NavMobile>
-            <NavMobile.Icon></NavMobile.Icon>
+            <NavMobile.Icon />
           </NavMobile>
         </Header.Nav>
       </Header.Inner>

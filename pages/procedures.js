@@ -1,9 +1,9 @@
 import { FooterContainer } from "../containers/global/footer";
-import { HeaderContainer } from "../containers/pages/home/header";
+import { HeaderContainer } from "../containers/global/header/header";
 import { ProceHeroContainer } from "../containers/pages/procedures/proceHero";
-import { ProceOverviewContainer } from "../containers/pages/procedures/ProceOverview";
+// import { ProceOverviewContainer } from "../containers/pages/procedures/ProceOverview";
 
-export default function FirstPost() {
+export default function Procedures() {
   return (
     <>
       <HeaderContainer />

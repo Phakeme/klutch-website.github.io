@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { HeaderContainer } from "../containers/pages/home/header";
+import { HeaderContainer } from "../containers/global/header/header";
 import { HeroContainer } from "../containers/pages/home/hero";
 import { CategoriesContainer } from '../containers/pages/home/categories'
 import { AboutSummaryContainer } from "../containers/pages/home/aboutSummary";

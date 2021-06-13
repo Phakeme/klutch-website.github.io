@@ -7,8 +7,9 @@ export { default as ContactInfo } from "./contactInfo/";
 export { default as AboutSummary } from "./pages/home/aboutSummary/";
 export { default as WhyChooseUs } from "./pages/home/whyChooseUs/";
 export { default as Footer } from "./footer/";
-export { default as ProceHero } from "./pages/procedures/hero/";
 export { default as Categories } from "./proceCategories/";
+export { default as ProceHero } from "./global/procedureHero/";
+// export { default as ProcedureHero } from "./global/procedureHero/";
 export { default as ProceOverview } from "./pages/procedures/proceOverview/";
 
 export { default as Button } from "./global/utils/button/";

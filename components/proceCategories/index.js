@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../global/container";
-import { Wrapper, Inner, Card, Text, H4 } from "./styles/categories";
+import { Wrapper, Inner, Card, InnerBox, Text, H4 } from "./styles/categories";
 
 export default function Categories({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -16,6 +16,10 @@ Categories.Inner = function CategoriesInner({ children, ...restProps }) {
 
 Categories.Card = function CategoriesCard({ children, ...restProps }) {
   return <Card {...restProps}>{children}</Card>;
+};
+
+Categories.InnerBox = function CategoriesInnerBox({ children, ...restProps }) {
+  return <InnerBox {...restProps}>{children}</InnerBox>;
 };
 
 Categories.Text = function CategoriesText({ children, ...restProps }) {
