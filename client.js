@@ -6,3 +6,4 @@ export default sanityClient({
     token: process.env.TOKEN, // or leave blank for unauthenticated usage
     useCdn: process.env.USE_CDN, // `false` if you want to ensure fresh data
 })
+
