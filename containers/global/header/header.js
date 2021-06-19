@@ -56,10 +56,10 @@ export function HeaderContainer() {
             </a>
           </Link>
           <Header.NavItems>
-            <HeaderMap to="/body-procedures" label="Body" />
-            <HeaderMap to="/breast-procedures" label="Breast" />
-            <HeaderMap to="/face-procedures" label="Face" />
-            <HeaderMap to="/skin-procedures" label="Skin" />
+            <HeaderMap to="/procedure/body" label="Body" />
+            <HeaderMap to="/procedure/breast" label="Breast" />
+            <HeaderMap to="/procedure/face" label="Face" />
+            <HeaderMap to="/procedure/skin" label="Skin" />
             <HeaderMap to="/about" label="Meet Dr Lutch" />
             <HeaderMap to="/contacts" label="Book Consaltation" />
           </Header.NavItems>

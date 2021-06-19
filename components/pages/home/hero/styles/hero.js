@@ -42,7 +42,7 @@ export const Showcase = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   width: auto;
-  background-color: white;
+  /* background-color: white; */
 `;
 
 export const Card = styled.div`
@@ -51,7 +51,7 @@ export const Card = styled.div`
 `;
 
 export const Links = styled.div`
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 `;
 
 export const SubHeading = styled.h3`

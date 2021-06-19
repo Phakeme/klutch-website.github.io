@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { FooterContainer } from "../containers/global/footer";
-import { ProcedureHeroMap } from "../containers/global/procedureHero/procedureHeroMap";
-import { HeaderContainer } from "../containers/global/header/header";
-import { ProceHero } from "../components/index";
+import { FooterContainer } from "../../containers/global/footer";
+import { ProcedureHeroMap } from "../../containers/global/procedureHero/procedureHeroMap";
+import { HeaderContainer } from "../../containers/global/header/header";
+import { ProceHero } from "../../components/index";
 
 export default function Contacts() {
   return (

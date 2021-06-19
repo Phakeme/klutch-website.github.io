@@ -1,17 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  /* background-color: var(--color-black); */
-  background-color: blue;
   color: var(--color-white);
-  /* padding: 30px; */
-  /* width: 100%; */
 `;
 
 export const Inner = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-gap: 1px; */
   height: 300px;
 `;
 

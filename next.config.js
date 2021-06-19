@@ -1,12 +1,12 @@
 module.exports = {
-    env: {
-        PROJECT_ID: process.env.PROJECT_ID,
-        DATASET: process.env.DATASET,
-        API_VERSION: process.env.API_VERSION,
-        TOKEN: process.env.TOKEN,
-        USE_CDN: process.env.USE_CDN,
-    },
-     async headers() {
+  env: {
+    PROJECT_ID: process.env.PROJECT_ID,
+    DATASET: process.env.DATASET,
+    API_VERSION: process.env.API_VERSION,
+    TOKEN: process.env.TOKEN,
+    USE_CDN: process.env.USE_CDN,
+  },
+  async headers() {
     return [
       {
         // matching all API routes
@@ -19,5 +19,9 @@ module.exports = {
         ]
       }
     ]
+  },
+  images: {
+    domains: ['cdn.sanity.io']
   }
+
 };
